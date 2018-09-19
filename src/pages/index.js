@@ -3,6 +3,7 @@
 //-----------------------------------------------------------------------------
 import React    from 'react'
 import { Link } from 'gatsby'
+import '../scss/blooger-bootstrap.scss'
 
 export default () => (
   <div style={{ color: `purple` }}>
