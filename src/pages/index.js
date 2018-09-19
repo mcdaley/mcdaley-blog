@@ -2,13 +2,17 @@
 // src/pages/index.js
 //-----------------------------------------------------------------------------
 import React    from 'react'
-import { Link } from 'gatsby'
+
 import '../scss/blooger-bootstrap.scss'
+import 'bootstrap'                        // Imports Bootstrap JavaScript
+
+import Layout   from '../layouts/layout'
 
 export default () => (
-  <div style={{ color: `purple` }}>
-    <Link to = '/contact/'>Contact</Link>
-    <h1>Hello Gatsby!</h1>
-    <p>What a world.</p>  
-  </div>
+  <Layout>
+    <div>
+      <h1>Home</h1>
+      <p>Welcome to Blooger</p>  
+    </div>
+  </Layout>
 )
