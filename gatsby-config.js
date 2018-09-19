@@ -2,6 +2,9 @@
 // gatsby-config.js
 //-----------------------------------------------------------------------------
 module.exports = {
+  siteMetadata: {
+    title: `Blooger`,
+  },
   plugins: [
     `gatsby-plugin-sass`,
   ],
