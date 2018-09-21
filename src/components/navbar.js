@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <Link exact to="/" className="navbar-brand">
+      <Link to="/" className="navbar-brand">
         BLOOGER
       </Link>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
           <Link 
-            exact to        ="/" 
+            to              ="/" 
             className       = "nav-item nav-link" 
             activeClassName ="active"
           >

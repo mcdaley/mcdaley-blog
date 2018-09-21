@@ -1,13 +1,13 @@
 //-----------------------------------------------------------------------------
 // src/pages/index.js
 //-----------------------------------------------------------------------------
-import React        from 'react'
-import { graphql }  from 'gatsby'
+import React              from 'react'
+import { Link, graphql }  from 'gatsby'
 
 import '../scss/blooger-bootstrap.scss'
 import 'bootstrap'                        // Imports Bootstrap JavaScript
 
-import Layout   from '../layouts/layout'
+import Layout             from '../layouts/layout'
 
 export default ({ data }) => (
   <Layout>
@@ -16,10 +16,12 @@ export default ({ data }) => (
       <h4>{data.allMarkdownRemark.totalCount} Blog Posts</h4>
       {data.allMarkdownRemark.edges.map( ({ node }) => (
         <div key={node.id}>
-          <h3>{node.frontmatter.title} 
-            <span className="subtext"> - {node.frontmatter.date}</span>
-          </h3>
-          <p>{node.excerpt}</p>
+          <Link to={node.fields.slug}>
+            <h3>{node.frontmatter.title} 
+              <span className="subtext"> - {node.frontmatter.date}</span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </Link>
         </div>
       ))}
     </div>
@@ -37,6 +39,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
           }
           excerpt
         }
