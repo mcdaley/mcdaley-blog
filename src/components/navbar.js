@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light navbar-background-color">
+    <nav className="navbar navbar-expand-lg navbar-light navbar-background-color navbar-font">
       <Link to="/" className="navbar-brand">
         BLOOGER
       </Link>
