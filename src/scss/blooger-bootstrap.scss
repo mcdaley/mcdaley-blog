@@ -4,6 +4,16 @@
 
 @import '~bootstrap/scss/bootstrap';
 
+html,
+body {
+  height:                 100%;
+  width:                  100%;
+}
+
+main {
+  padding-top:            60px;
+}
+
 // Tutorial style for date in blog title on index.js
 .subtext {
   font-size:              80%;

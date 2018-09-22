@@ -7,9 +7,11 @@ import Navbar   from '../components/navbar'
 
 const Layout = ({ children }) => {
   return (
-    <div id="root" className="container fluid">
+    <div id="root">
       <Navbar />
-      {children}
+      <div className="container fluid">
+        {children}
+      </div>
     </div>
   )
 }
