@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <div id="root">
       <Navbar />
-      <div className="container fluid">
+      <div className="main-content container fluid">
         {children}
       </div>
     </div>
