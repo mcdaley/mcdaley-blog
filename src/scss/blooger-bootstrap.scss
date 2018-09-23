@@ -19,9 +19,34 @@
   font-weight:            500;
 }
 
+.post {
+  margin-bottom:          2.5rem;
+}
+
+.post-meta {
+  text-transform:         capitalize;
+  color:                #222222;
+}
+
+.post-title {
+  font-size:              1.75rem;
+  font-weight:            500;
+  a {
+    &:link                { color: $black; }
+    &:visited             { color: $black; }
+    &:hover               { color: $black; text-decoration: underline }
+    &:active              { color: $black; }
+  }
+}
+
+.post-excerpt {
+  margin-bottom:          0.50rem;
+}
+
+
 // Tutorial style for date in blog title on index.js
 .subtext {
-  font-size:              80%;
+  font-size:              70%;
   color:                  $gray-500;
 }
 
@@ -29,6 +54,8 @@
 // Import Bootstrap and override defaults
 //
 @import '~bootstrap/scss/bootstrap';
+
+$font-family-sans-serif:            "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 html,
 body {

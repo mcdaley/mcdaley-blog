@@ -12,16 +12,23 @@ import Layout             from '../layouts/layout'
 export default ({ data }) => (
   <Layout>
     <div>
-      <h1>Blooger Home</h1>
-      <h4>{data.allMarkdownRemark.totalCount} Blog Posts</h4>
+      <h1 style={{ paddingBottom: "1.0rem" }}>
+        Blooger Home
+        <span className="subtext">
+          &nbsp; ({data.allMarkdownRemark.totalCount} Blog Posts)
+        </span>
+      </h1>
+      
       {data.allMarkdownRemark.edges.map( ({ node }) => (
-        <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h3>{node.frontmatter.title} 
-              <span className="subtext"> - {node.frontmatter.date}</span>
-            </h3>
-            <p>{node.excerpt}</p>
-          </Link>
+        <div className="post" key={node.id}>
+          <div className="post-meta">{node.frontmatter.date}</div>
+          <h2 className="post-title">
+            <Link to={node.fields.slug}>
+              {node.frontmatter.title}
+            </Link>
+          </h2>
+          <p className="post-excerpt">{node.excerpt}</p>
+          <Link to={node.fields.slug}>Read</Link>
         </div>
       ))}
     </div>
