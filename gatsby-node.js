@@ -9,6 +9,9 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if(node.internal.type === `MarkdownRemark`) {
     console.log(`[DEBUG]: Called onCreateNode for Markdown file`)
+    // Debugging Info (next 2 lines)
+    const fileNode = getNode(node.parent)
+    console.log(`[DEBUG]:`, fileNode.relativePath)
     const slug = createFilePath({node, getNode, basePath: `pages` })
     createNodeField({
       node,
@@ -26,6 +29,10 @@ exports.createPages = ({ graphql, actions }) => {
           allMarkdownRemark {
             edges {
               node {
+                frontmatter {
+                  title
+                  path
+                }
                 fields {
                   slug
                 }
@@ -37,7 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
       console.log(JSON.stringify(result, null, 4))
       result.data.allMarkdownRemark.edges.forEach( ({ node}) => {
         createPage({
-          path:       node.fields.slug,
+          path:       node.frontmatter.path == null ? node.fields.slug : node.frontmatter.path,
           component:  path.resolve(`./src/templates/blog-post.js`),
           context: {
             // Data passed to context is available in page queries 
