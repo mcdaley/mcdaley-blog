@@ -9,19 +9,14 @@ import 'bootstrap'                        // Imports Bootstrap JavaScript
 
 import Layout             from '../components/layout'
 import BlogPosts          from '../components/blog-posts'
+import BlogPostsHeader    from '../components/blog-posts-header'
 
 export default ({ data }) => {
   return (
     <Layout>
       <div>
-        <h1 style={{ paddingBottom: "1.0rem" }}>
-          Blooger Home
-          <span className="subtext">
-            &nbsp; ({data.allMarkdownRemark.totalCount} Blog Posts)
-          </span>
-        </h1>
-
-        <BlogPosts data = { data } />
+        <BlogPostsHeader  data = { data } />
+        <BlogPosts        data = { data } />
       </div>
     </Layout>
   )
