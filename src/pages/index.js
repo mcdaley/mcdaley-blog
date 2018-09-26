@@ -2,12 +2,13 @@
 // src/pages/index.js
 //-----------------------------------------------------------------------------
 import React              from 'react'
-import { Link, graphql }  from 'gatsby'
+import { graphql }        from 'gatsby'
 
 import '../scss/blooger-bootstrap.scss'
 import 'bootstrap'                        // Imports Bootstrap JavaScript
 
 import Layout             from '../layouts/layout'
+import BlogPosts          from '../components/blog-posts'
 
 export default ({ data }) => {
   return (
@@ -19,21 +20,8 @@ export default ({ data }) => {
             &nbsp; ({data.allMarkdownRemark.totalCount} Blog Posts)
           </span>
         </h1>
-        
-        {data.allMarkdownRemark.edges.map( ({ node }) => (
-          <div className="post" key={node.id}>
-            <div className="post-meta">{node.frontmatter.date}</div>
-            <h2 className="post-title">
-              <Link to={node.frontmatter.path == null ? node.fields.slug : node.frontmatter.path}>
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            <p className="post-excerpt">{node.excerpt}</p>
-            <Link to={node.frontmatter.path == null ? node.fields.slug : node.frontmatter.path}>
-              Read
-            </Link>
-          </div>
-        ))}
+
+        <BlogPosts data = { data } />
       </div>
     </Layout>
   )

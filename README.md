@@ -6,6 +6,7 @@ styling.
 ## To Do:
 - [] Add info sidebar with picture, short blurb, and icons with my skills
 - [] Add info top section that provides a short blurb, small picture and is only visible on mobile
+- [] Move Layout to components directory
 - [] Copy the font styles in the example blog link that I have on my laptop
 - [] Add **Footer** section
 - [] Add **About** section that provides rundown of me and my LinkedIn profile
