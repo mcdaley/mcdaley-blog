@@ -10,7 +10,7 @@ features. Otherwise, you are going to spend a lot of time building things
 that will not drive your business.
 
 ## Code
-Do not forget to add the code
+Do not forget to add the code. Here is some `inline code`, dude.
 
 ```javascript
 foreach i in array {
