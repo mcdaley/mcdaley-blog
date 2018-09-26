@@ -7,7 +7,7 @@ import { graphql }        from 'gatsby'
 import '../scss/blooger-bootstrap.scss'
 import 'bootstrap'                        // Imports Bootstrap JavaScript
 
-import Layout             from '../layouts/layout'
+import Layout             from '../components/layout'
 import BlogPosts          from '../components/blog-posts'
 
 export default ({ data }) => {
