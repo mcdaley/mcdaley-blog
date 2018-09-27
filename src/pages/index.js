@@ -3,43 +3,55 @@
 //-----------------------------------------------------------------------------
 import React              from 'react'
 import { graphql }        from 'gatsby'
-import Img                from 'gatsby-image'
 
 import '../scss/blooger-bootstrap.scss'
 import 'bootstrap'                        // Imports Bootstrap JavaScript
 
 import Layout             from '../components/layout'
+import BloggerInfo        from '../components/blogger-info'
 import BlogPosts          from '../components/blog-posts'
-import BlogPostsHeader    from '../components/blog-posts-header'
+//** import BlogPostsHeader    from '../components/blog-posts-header'
 
 export default ({ data }) => {
   return (
     <Layout>
       <div className="row">
         <div className="col-md-3 d-none d-md-block">
-          <Img className="rounded-circle" fluid={data.imageOne.childImageSharp.fluid} />
-          <h4 className="text-left" style={{ marginTop: "1.50rem"}}>Michael Daley</h4>
-          <p className="tagline">
-            Connecting the dots between product management and software development
-          </p>
+          <BloggerInfo  data = {data} />
         </div>
         <div className="col-sm-12 col-md-9">
-          <BlogPosts        data = { data } />
+          <BlogPosts    data = {data} />
         </div>
       </div>
     </Layout>
   )
 }
 
-// GrahQL Query for all posts
+//
+// GraphQL Query for all posts and images
+//
+
+///////////////////////////////////////////////////////////////////////////////
+// TODO: 09/26/2009
+// -  LOOK AT MAKING THE AUTHOR IMAGE FIXED SO THAT IT DOES NOT GROW/SHRINK
+//    WITH THE SCREEN.
+///////////////////////////////////////////////////////////////////////////////
+
+/* GraphQL Fragement that I can reuse in queries */
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
 export const query = graphql`
   query {
-    imageOne: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+    authorImage: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
+      ...fluidImage
     },
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount

@@ -4,10 +4,15 @@ Example template for building a blog with Gatsby and using Bootstrap for
 styling. 
 
 ## To Do:
-- [] Add info sidebar with picture, short blurb, and icons with my skills
+- [x] Add info sidebar with picture, short blurb, and icons with my skills
+- [x] Cleanup styles on the sidebar, look at margin-right for image.
+- [x] Look at adding a vertical line separating the sidebar and main content
+- [] Add favicons with fontawesome and add below sidebar in skills section
+- [] Add links to LinkedIn and github pages
 - [] Add info top section that provides a short blurb, small picture and is only visible on mobile
-- [] Move Layout to components directory
+- [x] Move Layout to components directory
 - [] Copy the font styles in the example blog link that I have on my laptop
+- [] Create standard text formatting in the website.
 - [] Add **Footer** section
 - [] Add **About** section that provides rundown of me and my LinkedIn profile
 - [] Add favicons and images so I can identify the tab on my browser
@@ -22,8 +27,11 @@ styling.
 
 ## Bugs:
 - [] Figure out why the navbar logo and links move down when I click on About and Contact
+
 ## Future Tasks
 - [] Investigate removing the PrismJS plugins for styling the <pre> and <code> blocks
+- [] Look at using a vertical divider or background w/ linear gradient to implement
+     vertical line that separates the blogger-info and list of blogger posts
 
 ## Running in development
 `gatsby develop`
