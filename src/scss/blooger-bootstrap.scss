@@ -5,6 +5,9 @@
 // Set up custom styles
 @import './globals.scss';
 
+// Set up fontawesome icons
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 .main-content {
   padding-top:            1.0rem;
 }
@@ -57,6 +60,10 @@
 
 .tagline {
   color:                  $gray-600;
+}
+
+.social-icon {
+  margin-right:           0.50rem;
 }
 
 //
