@@ -8,9 +8,11 @@ import Header   from '../components/header'
 
 export default () => (
   <Layout>
-    <div style={{ color: `purple` }}>
-      <Header headerText="Contact" />
-      <p>Send us a message!</p>
+    <div className="row">
+      <div style={{ color: `purple` }}>
+        <Header headerText="Contact" />
+        <p>Send us a message!</p>
+      </div>
     </div>
   </Layout>
 )

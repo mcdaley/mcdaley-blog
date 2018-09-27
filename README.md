@@ -20,6 +20,8 @@ styling.
 - [] Add **Contact** section with a form to email me
 - [] Add **Search** form using 3rd party plugin
 
+## Bugs:
+- [] Figure out why the navbar logo and links move down when I click on About and Contact
 ## Future Tasks
 - [] Investigate removing the PrismJS plugins for styling the <pre> and <code> blocks
 
