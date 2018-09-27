@@ -9,7 +9,7 @@ styling.
 - [x] Look at adding a vertical line separating the sidebar and main content
 - [x] Add favicons with fontawesome and add below sidebar in social icons section
 - [x] Add links to LinkedIn and github pages
-- [] Add info top section that provides a short blurb, small picture and is only visible on mobile
+- [x] Add info top section that provides a short blurb, small picture and is only visible on mobile
 - [x] Move Layout to components directory
 - [] Copy the font styles in the example blog link that I have on my laptop
 - [] Create standard text formatting in the website.
@@ -29,6 +29,7 @@ styling.
 - [] Figure out why the navbar logo and links move down when I click on About and Contact
 
 ## Future Tasks
+- [] For SEO I will want a <h1> tag on the page, but I currently do not have one on index.js. Should I add a hidden one?
 - [] Add global text in gatsby-config.js as in tutorial to remove all hard-coded text
      that is specific to me (e.g., tagline, name, linked-in link,...)
 - [] Investigate removing the PrismJS plugins for styling the <pre> and <code> blocks

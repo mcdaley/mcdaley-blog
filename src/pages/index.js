@@ -9,6 +9,7 @@ import 'bootstrap'                        // Imports Bootstrap JavaScript
 
 import Layout             from '../components/layout'
 import BloggerInfo        from '../components/blogger-info'
+import MobileBloggerInfo  from '../components/mobile-blogger-info'
 import BlogPosts          from '../components/blog-posts'
 //** import BlogPostsHeader    from '../components/blog-posts-header'
 
@@ -20,6 +21,9 @@ export default ({ data }) => {
           <BloggerInfo  data = {data} />
         </div>
         <div className="col-sm-12 col-md-9">
+          <div className="d-md-none">
+            <MobileBloggerInfo data = {data} />
+          </div>
           <BlogPosts    data = {data} />
         </div>
       </div>
@@ -47,11 +51,23 @@ export const fluidImage = graphql`
     }
   }
 `
+export const fixedImage = graphql`
+  fragment fixedImage on File {
+    childImageSharp {
+      fixed(width: 80, height: 80) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+`
 
 export const query = graphql`
   query {
     authorImage: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
       ...fluidImage
+    },
+    authorMobileImage: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
+      ...fixedImage
     },
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
