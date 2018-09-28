@@ -4,7 +4,8 @@
 import React      from 'react'
 import { Helmet } from 'react-helmet'
 
-import Navbar     from '../components/navbar'
+import Navbar     from './navbar'
+import Footer     from './footer'
 
 const Layout = ({ children }) => {
   return ( 
@@ -20,6 +21,7 @@ const Layout = ({ children }) => {
       <div className="main-content container fluid">
         {children}
       </div>
+      <Footer />
     </div>
   )
 }

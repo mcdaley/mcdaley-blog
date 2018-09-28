@@ -11,12 +11,12 @@ styling.
 - [x] Add links to LinkedIn and github pages
 - [x] Add info top section that provides a short blurb, small picture and is only visible on mobile
 - [x] Move Layout to components directory
-- [] Copy the font styles in the example blog link that I have on my laptop
-- [] Create standard text formatting in the website.
 - [] Add **Footer** section
-- [] Add **About** section that provides rundown of me and my LinkedIn profile
+- [] Add **About** page that provides rundown of me and my LinkedIn profile and skills
 - [] Add favicons and images so I can identify the tab on my browser
 - [] Add links to previous and next blog entries
+- [] Copy the font styles in the example blog link that I have on my laptop
+- [] Create standard text formatting in the website.
 - [] Copy repository to a new blog repository
 - [] Add **SEO** plugin and configure in the site
 - [] Add **Netlify** plugin and deploy production version of the site
