@@ -82,6 +82,27 @@
   color:                  $github-blue;
 }
 
+/* Style the footer and its content */
+.blog-footer {
+  padding-left:           0.50rem;
+  padding-bottom:         0.50rem; 
+  margin-left:            3.00rem; 
+  margin-right:           3.00rem;
+
+  a {
+    &:link                { color: $gray-600; }
+    &:visited             { color: $gray-600; }
+    &:hover               { color: $black; text-decoration: underline }
+    &:active              { color: $gray-600; }
+  }
+}
+
+.blog-footer-header {
+  margin-top:             1.50rem;
+  margin-bottom:          0.75rem;
+  font-weight:            400;
+}
+
 //
 // Custom code hilighting for PrismJS
 //
@@ -141,6 +162,5 @@ body {
 
 footer {
   border-top:             1px solid $gray-400;
-  //** background-color:       $gray-900;
   color:                  $gray-800;
 }

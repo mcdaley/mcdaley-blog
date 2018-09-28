@@ -4,14 +4,24 @@
 import React    from 'react'
 import { Link } from 'gatsby'
 
-import BloggerInfoSocialIcons from './blogger-info-social-icons'
+//** import BloggerInfoSocialIcons from './blogger-info-social-icons'
 
+///////////////////////////////////////////////////////////////////////////////
+// TODO: 09/27/2018
+// -  CODE FOR THE FOOTER LINKS IS DUPLICATE OF THE BloggerInfoSocialIcons
+//    EXCEPT FOR THE MARGINS AND THE LINK COLORS. SHOULD BE ABLE TO PASS IN
+//    SOME PROPERTIES TO REFACTOR INTO A SINGLE COMPONENT.
+///////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Footer to add to the bottom of the Layout for all pages on the site
+ */
 export default function Footer() {
   return (
-    <footer className="" style={{paddingLeft: "0.50rem", paddingBottom: "0.50rem", marginLeft: "3.0rem", marginRight: "3.0rem" }}>
+    <footer className="blog-footer">
       <div className="container-fluid row">
         <div className="col-5">
-          <h5 style={{marginTop: "1.5rem"}}>Navigation</h5>
+          <h5 className="blog-footer-header">Navigation</h5>
           <nav class="nav flex-column">
             <Link to = "/">         Home    </Link>
             <Link to = "/about">    About   </Link>
@@ -19,7 +29,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="col-7">
-          <h5 className="navbar-brand" style={{marginTop: "1.0rem"}}>Michael Daley</h5>
+          <h5 className="blog-footer-header">Michael Daley</h5>
           <div>
             <a  href      = "https://github.com/mcdaley" 
                 className = "social-icon github-icon" 
