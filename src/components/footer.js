@@ -22,7 +22,7 @@ export default function Footer() {
       <div className="container-fluid row">
         <div className="col-5">
           <h5 className="blog-footer-header">Navigation</h5>
-          <nav class="nav flex-column">
+          <nav className="nav flex-column">
             <Link to = "/">         Home    </Link>
             <Link to = "/about">    About   </Link>
             <Link to = "/contact">  Contact </Link>

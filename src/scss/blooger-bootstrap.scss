@@ -106,6 +106,31 @@
 }
 
 //
+// Technical Skill Styles in About page
+//
+.technical-skill {
+  .skill-icon {
+    padding-top:          0.50rem;
+  }
+
+  .card {
+    //** border:               1px solid red;
+    border:               none;
+    margin-bottom:        1.00rem;
+
+    .card-body {
+      padding:            0.50rem;
+    }
+
+    .card-title {
+      text-align:         center;
+      font-size:          90%;
+      margin-bottom:      0;
+    }
+  }
+}
+
+//
 // Custom code hilighting for PrismJS
 //
 .gatsby-highlight-code-line {
