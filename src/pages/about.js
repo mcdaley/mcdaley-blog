@@ -2,15 +2,15 @@
 // src/pages/about.js
 //-----------------------------------------------------------------------------
 import React          from 'react'
-import { graphql }    from 'gatsby'
-import Img            from 'gatsby-image'
 
 import Layout         from '../components/layout'
 import Header         from '../components/header'
 import TechnicalSkill from '../components/technical-skill'
+import TechnicalLogo  from '../components/technical-logo'
 import RailsLogo      from '../scss/static/ruby-rails-logo.svg'
+import PostgreSQLLogo from '../scss/static/postgresql-logo.svg'
 
-export default ({ data }) => (
+export default () => (
   <Layout>
     <div>
       <Header headerText = 'About Mike Daley' />
@@ -39,17 +39,11 @@ export default ({ data }) => (
 
       <hr />
       <h2>Technical Skills</h2>
-        <ul style={{color: "red"}}>
-          <li>
-            NEED TO ADD IMAGES FOR RUBY ON RAILS AND POSTGRESQL AND REMOVE 
-            DUPLICATE JavaScript
-          </li>
-          <li>
-            Look at adding a background image with code embedded in it.
-          </li>
-        </ul>
-    
+        
       <div className="row">
+      <div className="col-6 col-sm-6 col-md-3">
+          <TechnicalLogo logo={RailsLogo} label="Ruby on Rails"/>
+        </div>
         <div className="col-6 col-sm-6 col-md-3">
           <TechnicalSkill icon="fa-js-square"     label="JavaScript"/>
         </div>
@@ -57,15 +51,12 @@ export default ({ data }) => (
           <TechnicalSkill icon="fa-react"         label="ReactJS"/>
         </div>
         <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fas fa-database"  label="SQL"/>
-        </div>
-        <div className="col-6 col-sm-6 col-md-3">
           <TechnicalSkill icon="fa-html5"         label="HTML5"/>
         </div>
       </div>
       <div className="row">
         <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fab fa-linux"     label="Linux"/>
+          <TechnicalLogo logo={PostgreSQLLogo} label="PostgreSQL"/>
         </div>
         <div className="col-6 col-sm-6 col-md-3">
           <TechnicalSkill icon="fab fa-sass"      label="Sass"/>
@@ -74,25 +65,15 @@ export default ({ data }) => (
           <TechnicalSkill icon="fab fa-digital-ocean"   label="Digital Ocean"/>
         </div>
         <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fa-js-square"     label="JavaScript"/>
+          <TechnicalSkill icon="fab fa-linux"     label="Linux"/>
         </div>
       </div>
-
-      <hr />
-      <h2>Rails SVG Logo</h2>
       <div className="row">
         <div className="col-6 col-sm-6 col-md-3">
-          <div className="technical-skill">
-            <div className="card">
-              <img src={RailsLogo} />
-              <div className="card-body">
-                <h5 className="card-title">Ruby on Rails</h5>
-              </div>
-            </div>
-          </div>
+          <TechnicalSkill icon="fas fa-database"  label="SQL"/>
         </div>
-        <div className="col-6 col-sm-6 col-md-3">one</div>
-        <div className="col-6 col-sm-6 col-md-3">two</div>
+        <div className="col-6 col-sm-6 col-md-3">&nbsp;</div>
+        <div className="col-6 col-sm-6 col-md-3">&nbsp;</div>
       </div>
       
       <hr />

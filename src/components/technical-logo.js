@@ -1,15 +1,13 @@
 //-----------------------------------------------------------------------------
-// src/components/technical-skill.js
+// src/components/technical-logo.js
 //-----------------------------------------------------------------------------
 import React    from 'react'
 
-const TechnicalSkill = ({icon, label}) => {
-  let iconStyle = `mx-auto fab ${icon} fw fa-3x skill-icon`
-  
+const TechnicalLogo = ({logo, label}) => {
   return (
     <div className="technical-skill">
       <div className="card">
-        <i className={iconStyle}></i>
+        <img src={logo} height="56px" />
         <div className="card-body">
           <h5 className="card-title">{label}</h5>
         </div>
@@ -18,4 +16,4 @@ const TechnicalSkill = ({icon, label}) => {
   )
 }
 
-export default TechnicalSkill
+export default TechnicalLogo
