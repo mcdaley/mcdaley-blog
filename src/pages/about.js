@@ -2,12 +2,15 @@
 // src/pages/about.js
 //-----------------------------------------------------------------------------
 import React          from 'react'
+import { graphql }    from 'gatsby'
+import Img            from 'gatsby-image'
 
 import Layout         from '../components/layout'
 import Header         from '../components/header'
 import TechnicalSkill from '../components/technical-skill'
+import RailsLogo      from '../scss/static/ruby-rails-logo.svg'
 
-export default () => (
+export default ({ data }) => (
   <Layout>
     <div>
       <Header headerText = 'About Mike Daley' />
@@ -75,6 +78,23 @@ export default () => (
         </div>
       </div>
 
+      <hr />
+      <h2>Rails SVG Logo</h2>
+      <div className="row">
+        <div className="col-6 col-sm-6 col-md-3">
+          <div className="technical-skill">
+            <div className="card">
+              <img src={RailsLogo} />
+              <div className="card-body">
+                <h5 className="card-title">Ruby on Rails</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-6 col-sm-6 col-md-3">one</div>
+        <div className="col-6 col-sm-6 col-md-3">two</div>
+      </div>
+      
       <hr />
       <h2>Blog Ideas</h2>
       <p>
