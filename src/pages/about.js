@@ -14,19 +14,16 @@ export default () => (
       <p>
         My name is Mike Daley and I am a Product Manager and Software Engineer 
         living in San Francisco with a track record of delivering successful 
-        web and mobile experiences. 
-      </p>
-      <p>  
-        As a Product Manager and Software Developer, I have launched real-time 
-        trading applications, online SaaS consumer products, and a P2P Payments 
-        Platform. I have worked at startups, mid-market, and Fortune 500 companies and 
-        I have used waterfall, scrumfall, and agile development methodologies to 
-        design and build successful UIs and server-side applications.
+        web and mobile experiences by defining winning strategies, acting as 
+        the business owner, and leading customer driven cross-functional 
+        agile design and development teams in startup, mid-market, and 
+        large organizations. 
       </p>
       <p>
-        From my diverse experiences, I want to provide readers insight on how 
-        to build great products by creating a product vision, aligning 
-        cross-functional teams, and implementing a sustainable development process.
+        From my diverse experiences as a Product Manager and Software Engineer, 
+        I want to provide readers insight on how to build great products by 
+        creating a product vision, aligning cross-functional teams, and 
+        implementing a sustainable development process.
       </p>
 
       <p>
