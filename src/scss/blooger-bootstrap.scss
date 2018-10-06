@@ -108,9 +108,19 @@
 //
 // Technical Skill Styles in About page
 //
+.about-header {
+  margin-top:             2.00rem;
+  margin-bottom:          2.00rem;
+}
+
 .technical-skill {
   .skill-icon {
     padding-top:          0.50rem;
+  }
+
+  .javascript-icon {
+    background-color:     yellow;
+    color:                #000000;
   }
 
   .card {

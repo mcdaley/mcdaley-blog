@@ -5,10 +5,7 @@ import React          from 'react'
 
 import Layout         from '../components/layout'
 import Header         from '../components/header'
-import TechnicalSkill from '../components/technical-skill'
-import TechnicalLogo  from '../components/technical-logo'
-import RailsLogo      from '../scss/static/ruby-rails-logo.svg'
-import PostgreSQLLogo from '../scss/static/postgresql-logo.svg'
+import MySkills       from '../components/my-skills.js'
 
 export default () => (
   <Layout>
@@ -38,42 +35,48 @@ export default () => (
       </p>
 
       <hr />
-      <h2>Technical Skills</h2>
-        
+      <h2 className="about-header">Technical Skills</h2>
       <div className="row">
-      <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalLogo logo={RailsLogo} label="Ruby on Rails"/>
+        <div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="ruby_on_rails" />
+        </div> 
+        <div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="javascript" />
         </div>
         <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fa-js-square"     label="JavaScript"/>
+          <MySkills skill="reactjs" />
         </div>
         <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fa-react"         label="ReactJS"/>
-        </div>
-        <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fa-html5"         label="HTML5"/>
+          <MySkills skill="html5" />
         </div>
       </div>
       <div className="row">
-        <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalLogo logo={PostgreSQLLogo} label="PostgreSQL"/>
+        < div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="postgresql" />
         </div>
-        <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fab fa-sass"      label="Sass"/>
+        < div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="sass" />
         </div>
-        <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fab fa-digital-ocean"   label="Digital Ocean"/>
+        < div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="digital_ocean" />
         </div>
-        <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fab fa-linux"     label="Linux"/>
+        < div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="linux" />
         </div>
       </div>
       <div className="row">
-        <div className="col-6 col-sm-6 col-md-3">
-          <TechnicalSkill icon="fas fa-database"  label="SQL"/>
+        < div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="sql" />
         </div>
-        <div className="col-6 col-sm-6 col-md-3">&nbsp;</div>
-        <div className="col-6 col-sm-6 col-md-3">&nbsp;</div>
+        < div className="col-6 col-sm-6 col-md-3">
+          <MySkills skill="c_plus_plus" />
+        </div>
+        < div className="col-6 col-sm-6 col-md-3">
+          &nbsp;
+        </div>
+        < div className="col-6 col-sm-6 col-md-3">
+          &nbsp;
+        </div>
       </div>
       
       <hr />
