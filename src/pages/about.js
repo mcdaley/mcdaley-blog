@@ -99,32 +99,28 @@ export default ({ data }) => (
   </Layout>
 )
 
+//
 // GraphQL for About page images
+//
+
+// Fragment for thin background images
 export const fluidAboutImage = graphql`
   fragment fluidAboutImage on File {
     childImageSharp {
       fluid(maxWidth: 1024 maxHeight: 128) {
-        ...GatsbyImageSharpField
+        ...GatsbyImageSharpFluid
       }
     }
   }
 `
 
 export const aboutQuery = graphql`
-  query {
-    codeImage: file(relativePath: {eq: "Software_Code.jpeg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1024 maxHeight: 128) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
+  query { 
     blueImage: file(relativePath: {eq: "Binary_Blue_Bkgrd.jpeg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1024 maxHeight: 128) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...fluidAboutImage
+    },
+    codeImage: file(relativePath: {eq: "Software_Code.jpeg"}) {
+      ...fluidAboutImage
     },
   }
 `
