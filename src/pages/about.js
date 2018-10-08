@@ -2,15 +2,18 @@
 // src/pages/about.js
 //-----------------------------------------------------------------------------
 import React          from 'react'
+import { graphql }    from 'gatsby'
+import Img            from 'gatsby-image'
 
 import Layout         from '../components/layout'
 import Header         from '../components/header'
 import MySkills       from '../components/my-skills.js'
 
-export default () => (
+export default ({ data }) => (
   <Layout>
     <div>
       <Header headerText = 'About Mike Daley' />
+      <Img fluid={data.blueImage.childImageSharp.fluid} className="about-img" />
       <p>
         My name is Mike Daley and I am a Product Manager and Software Engineer 
         living in San Francisco with a track record of delivering successful 
@@ -33,6 +36,7 @@ export default () => (
 
       <hr />
       <h2 className="about-header">Technical Skills</h2>
+      <Img fluid={data.codeImage.childImageSharp.fluid} className="about-img" />
       <div className="row">
         <div className="col-6 col-sm-6 col-md-3">
           <MySkills skill="ruby_on_rails" />
@@ -94,3 +98,33 @@ export default () => (
     </div>
   </Layout>
 )
+
+// GraphQL for About page images
+export const fluidAboutImage = graphql`
+  fragment fluidAboutImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1024 maxHeight: 128) {
+        ...GatsbyImageSharpField
+      }
+    }
+  }
+`
+
+export const aboutQuery = graphql`
+  query {
+    codeImage: file(relativePath: {eq: "Software_Code.jpeg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1024 maxHeight: 128) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+    blueImage: file(relativePath: {eq: "Binary_Blue_Bkgrd.jpeg"}) {
+      childImageSharp {
+        fluid(maxWidth: 1024 maxHeight: 128) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
+  }
+`

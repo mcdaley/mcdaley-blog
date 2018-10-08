@@ -12,7 +12,7 @@ styling.
 - [x] Add info top section that provides a short blurb, small picture and is only visible on mobile
 - [x] Move Layout to components directory
 - [x] Add **Footer** section
-- [] Add **About** page that provides rundown of me and my LinkedIn profile and skills
+- [x] Add **About** page that provides rundown of me and my LinkedIn profile and skills
 - [] Add favicons and images so I can identify the tab on my browser
 - [] Add links to previous and next blog entries
 - [] Copy the font styles in the example blog link that I have on my laptop
