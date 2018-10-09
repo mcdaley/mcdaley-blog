@@ -1,5 +1,6 @@
 ---
 title:  "Sweet Pandas Eating Sweets"
+path:   "sweet-pandas-eating-sweets"
 date:   "2018-09-17"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title:  "Pandas Eating Bananas"
+path:   "pandas-eating-bananas"
 date:   "2018-09-20"
 ---
 
