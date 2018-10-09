@@ -13,12 +13,14 @@ styling.
 - [x] Move Layout to components directory
 - [x] Add **Footer** section
 - [x] Add **About** page that provides rundown of me and my LinkedIn profile and skills
+- [] See if I can place assets in '/static' and refer via '/static/'
 - [] Add favicons and images so I can identify the tab on my browser
 - [] Add links to previous and next blog entries
 - [] Copy the font styles in the example blog link that I have on my laptop
 - [] Create standard text formatting in the website.
 - [] Refactor the social icons in the Footer to the BloggerInfoSocialIcons
 - [] Copy repository to a new blog repository
+- [] Create a blog logo
 - [] Add **SEO** plugin and configure in the site
 - [] Add **Netlify** plugin and deploy production version of the site
 - [] Link www.mcdaley.com to Netlify page, so I can add to my resume
