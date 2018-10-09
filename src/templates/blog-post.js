@@ -14,23 +14,24 @@ export default ({ data, location,  pathContext}) => {
 
   return (
     <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <div className="postLinks">
-          <p>
+      <div className="row">
+        <div className="col-12">
+          <h1>{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <nav className="nav prev-next-post-links">          
             {prev &&
-              <Link to={prev.frontmatter.path}>
-                Previous: {prev.frontmatter.title}
+                <Link className="nav-link prev-post-link" to={prev.frontmatter.path}>
+                  <p>Previous Post</p>
+                  <h5> {prev.frontmatter.title} </h5>
+                </Link>
+            }
+            {next &&
+              <Link className="nav-link next-post-link" to={next.frontmatter.path}>
+                <p>Next Post</p> 
+                <h5>{next.frontmatter.title}</h5>
               </Link>
             }
-          </p>
-          <p>
-            {next &&
-              <Link to={next.frontmatter.path}>
-                Next: {next.frontmatter.title}
-              </Link>}
-          </p>
+          </nav>
         </div>
       </div>
     </Layout>

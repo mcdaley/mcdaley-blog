@@ -29,7 +29,8 @@ styling.
 - [] Add **Search** form using 3rd party plugin
 
 ## Bugs:
-- [] Figure out why the navbar logo and links move down when I click on About and Contact
+- [x] Figure out why the navbar logo and links move down when I click on About and Contact
+- [x] Figure out how to style the links to the Previous and Next posts so that <p> and <h5> change color on hover.
 
 ## Future Tasks
 - [] For SEO I will want a <h1> tag on the page, but I currently do not have one on index.js. Should I add a hidden one?

@@ -46,7 +46,6 @@
   margin-bottom:          0.50rem;
 }
 
-
 // Tutorial style for date in blog title on index.js
 .subtext {
   font-size:              70%;
@@ -103,6 +102,44 @@
   margin-bottom:          0.75rem;
   font-weight:            400;
   font-size:              1.10rem;
+}
+
+//
+// Styles for previous and next blog posts
+//
+.prev-next-post-links {
+  margin-top:             3.0rem;
+}
+///////////////////////////////////////////////////////////////////////////////
+// TODO: 10/09/2018
+// -  NEED TO FIGURE OUT HOW TO MAKE THE <p> AND <h5> LINKS BOTH CHANGE 
+//    COLOR TO ORANGE WHEN I HOVER OVER THEM. CURRENTLY ONLY THE 
+//    SPECIFIC ELEMENT THAT I HOVER ON CHANGES COLOR.
+///////////////////////////////////////////////////////////////////////////////
+a.prev-post-link, a.next-post-link {
+  width:                  305px;
+  word-break:             break-word;
+  padding-left:           0.00rem;
+
+  p {
+    color:                $gray-600;
+    font-size:            0.80rem;
+    margin-bottom:        0.00rem;
+
+    &:link                { color: $gray-600; }
+    &:hover               { color: $sfo-orange; font-weight: bolder; }
+    &:visited             { color: $gray-600; }
+  }
+
+  h5 {
+    color:                $gray-900;
+    font-size:            1.10rem;
+    font-weight:          bold;
+
+    &:link                { color: $gray-900; }
+    &:hover               { color: $sfo-orange; font-weight: bolder; }
+    &:visited             { color: $gray-900; }
+  }
 }
 
 //
