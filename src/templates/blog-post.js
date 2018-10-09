@@ -2,9 +2,10 @@
 // src/templates/blog-post.js
 //-----------------------------------------------------------------------------
 import React              from 'react'
-import { Link, graphql }  from 'gatsby'
+import { graphql }        from 'gatsby'
 
 import Layout             from '../components/layout'
+import PrevNextPostLink   from '../components/prev-next-post-links'
 
 export default ({ data, location,  pathContext}) => {
   const post          = data.markdownRemark
@@ -18,20 +19,7 @@ export default ({ data, location,  pathContext}) => {
         <div className="col-12">
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <nav className="nav prev-next-post-links">          
-            {prev &&
-                <Link className="nav-link prev-post-link" to={prev.frontmatter.path}>
-                  <p>Previous Post</p>
-                  <h5> {prev.frontmatter.title} </h5>
-                </Link>
-            }
-            {next &&
-              <Link className="nav-link next-post-link" to={next.frontmatter.path}>
-                <p>Next Post</p> 
-                <h5>{next.frontmatter.title}</h5>
-              </Link>
-            }
-          </nav>
+          <PrevNextPostLink prev={prev} next={next} />
         </div>
       </div>
     </Layout>
