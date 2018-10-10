@@ -26,19 +26,20 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise( (resolve, reject) => {
     graphql(
       `{
-          allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-            edges {
-              node {
-                frontmatter {
-                  title
-                  path
-                }
-                fields {
-                  slug
-                }
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+          edges {
+            node {
+              frontmatter {
+                title
+                path
               }
+              fields {
+                slug
+              }
+              excerpt
             }
           }
+        }
       }`
     ).then(result => {  
       console.log(JSON.stringify(result, null, 4))
