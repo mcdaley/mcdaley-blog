@@ -104,16 +104,28 @@
   font-size:              1.10rem;
 }
 
-//
+//-------------------------------------------------------------------
 // Styles for previous and next blog posts
-//
+//-------------------------------------------------------------------
+.prev-post-container, .next-post-container {
+  padding-top:            1.50rem;
+}
+
+p.prev-post-label, p.next-post-label {
+  color:                  $gray-700;
+  font-size:              0.80rem;
+  margin-bottom:          0.00rem;
+  padding-top:            1.00rem;
+}
+
 .prev-next-post-links {
-  margin-top:             3.00rem;
+  margin-top:             2.00rem;
   padding-bottom:         3.00rem;
 }
+
 ///////////////////////////////////////////////////////////////////////////////
 // TODO: 10/09/2018
-// -  NEED TO FIGURE OUT HOW TO MAKE THE <p> AND <h5> LINKS BOTH CHANGE 
+// -  NEED TO FIGURE OUT HOW TO MAKE THE <p> AND <h2> LINKS BOTH CHANGE 
 //    COLOR TO ORANGE WHEN I HOVER OVER THEM. CURRENTLY ONLY THE 
 //    SPECIFIC ELEMENT THAT I HOVER ON CHANGES COLOR.
 ///////////////////////////////////////////////////////////////////////////////
@@ -122,7 +134,7 @@ a.prev-post-link, a.next-post-link {
   word-break:             break-word;
   padding-left:           0.00rem;
   padding-right:          3.00rem;
-  padding-top:            1.50rem;
+  padding-top:            0.00rem;
 
   p {
     color:                $gray-600;
@@ -134,10 +146,11 @@ a.prev-post-link, a.next-post-link {
     &:visited             { color: $gray-600; }
   }
 
-  h5 {
+  h2 {
     color:                $gray-900;
     font-size:            1.10rem;
     font-weight:          bold;
+    margin-bottom:        0;
 
     &:link                { color: $gray-900; }
     &:hover               { color: $sfo-orange; text-decoration: underline; }

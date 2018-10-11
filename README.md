@@ -15,7 +15,7 @@ styling.
 - [x] Add **About** page that provides rundown of me and my LinkedIn profile and skills
 - [] See if I can place assets in '/static' and refer via '/static/'
 - [] Add favicons and images so I can identify the tab on my browser
-- [] Add links to previous and next blog entries
+- [x] Add links to previous and next blog entries
 - [] Copy the font styles in the example blog link that I have on my laptop
 - [] Create standard text formatting in the website.
 - [] Refactor the social icons in the Footer to the BloggerInfoSocialIcons
