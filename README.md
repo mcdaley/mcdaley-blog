@@ -13,9 +13,10 @@ styling.
 - [x] Move Layout to components directory
 - [x] Add **Footer** section
 - [x] Add **About** page that provides rundown of me and my LinkedIn profile and skills
-- [] See if I can place assets in '/static' and refer via '/static/'
-- [] Add favicons and images so I can identify the tab on my browser
+- [x] See if I can place assets in '/static' and refer via '/static/'
+- [x] Add favicons and images so I can identify the tab on my browser
 - [x] Add links to previous and next blog entries
+- [] Use MouseEnter and MouseLeave events to change CSS for next and previous post links
 - [] Copy the font styles in the example blog link that I have on my laptop
 - [] Create standard text formatting in the website.
 - [] Refactor the social icons in the Footer to the BloggerInfoSocialIcons
@@ -31,6 +32,7 @@ styling.
 ## Bugs:
 - [x] Figure out why the navbar logo and links move down when I click on About and Contact
 - [x] Figure out how to style the links to the Previous and Next posts so that <p> and <h5> change color on hover.
+- [] Favicons are not displayed on Chrome
 
 ## Future Tasks
 - [] For SEO I will want a <h1> tag on the page, but I currently do not have one on index.js. Should I add a hidden one?
