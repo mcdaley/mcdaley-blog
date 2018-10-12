@@ -1,9 +1,11 @@
 # Blooger Bootstrap
 
 Example template for building a blog with Gatsby and using Bootstrap for 
-styling. 
+styling.
 
-## To Do:
+## BLOG DEVELOPMENT
+
+### To Do:
 - [x] Add info sidebar with picture, short blurb, and icons with my skills
 - [x] Cleanup styles on the sidebar, look at margin-right for image.
 - [x] Look at adding a vertical line separating the sidebar and main content
@@ -29,12 +31,12 @@ styling.
 - [] Add **Contact** section with a form to email me
 - [] Add **Search** form using 3rd party plugin
 
-## Bugs:
+### Bugs:
 - [x] Figure out why the navbar logo and links move down when I click on About and Contact
 - [x] Figure out how to style the links to the Previous and Next posts so that <p> and <h5> change color on hover.
-- [] Favicons are not displayed on Chrome
+- [x] Favicons are not displayed on Chrome
 
-## Future Tasks
+### Future Tasks
 - [] For SEO I will want a <h1> tag on the page, but I currently do not have one on index.js. Should I add a hidden one?
 - [] Add global text in gatsby-config.js as in tutorial to remove all hard-coded text
      that is specific to me (e.g., tagline, name, linked-in link,...)
@@ -42,5 +44,20 @@ styling.
 - [] Look at using a vertical divider or background w/ linear gradient to implement
      vertical line that separates the blogger-info and list of blogger posts
 
-## Running in development
+## BLOG DOCUMENTATION
+
+### Adding Favicon
+* Place the icons/png images in the /static/icons directory
+* Add a link to the images in the /src/components/layout.js with the following 
+  code. **NOTE**, the rel field must equal 'icon' to be recognized as an icon
+  by the browser. Add ```<link>``` for the 32x32 and 96x96 images.
+
+```JSX
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+```
+
+* Gatsby will place the /static/icons/* files in the /public/icons directory
+  in the compiled version of the website.
+
+### Running in development
 `gatsby develop`

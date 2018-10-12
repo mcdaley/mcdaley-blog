@@ -6,10 +6,6 @@ import { Helmet } from 'react-helmet'
 
 import Navbar     from './navbar'
 import Footer     from './footer'
-import Favicon    from '../scss/static/favicon.ico'
-import Logo16     from '../scss/static/favicon-16x16.png'
-import Logo32     from '../scss/static/favicon-32x32.png'
-import Logo96     from '../scss/static/favicon-96x96.png'
 
 const Layout = ({ children }) => {
   return ( 
@@ -20,21 +16,18 @@ const Layout = ({ children }) => {
         <link rel   = "stylesheet"
               href  = "https://fonts.googleapis.com/css?family=Roboto"
               media = "all" />
-        <link rel   = "logo-favicon"
-              type  = "image/ico"
-              href  = {`${Favicon}`} />
-        <link rel   = "logo-16"
+        <link rel   = "icon"
               type  = "image/png"
               sizes = "16x16"
-              href  = {`${Logo16}`} />
-        <link rel   = "logo-32"
+              href  =  "/icons/favicon-16x16.png" />
+        <link rel   = "icon"
               type  = "image/png"
               sizes = "32x32"
-              href  = {`${Logo32}`} />
-        <link rel   = "logo-96"
+              href  = "/icons/favicon-32x32.png" />
+        <link rel   = "icon"
               type  = "image/png"
               sizes = "96x96"
-              href  = {`${Logo96}`} />
+              href  = "/icons/favicon-96x96.png" />
       </Helmet>
       <Navbar />
       <div className="main-content container fluid">
