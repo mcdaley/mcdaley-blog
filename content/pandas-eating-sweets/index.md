@@ -1,7 +1,8 @@
 ---
-title:  "Sweet Pandas Eating Sweets"
-path:   "sweet-pandas-eating-sweets"
-date:   "2018-09-17"
+title:        "Sweet Pandas Eating Sweets"
+path:         "sweet-pandas-eating-sweets"
+date:         "2018-09-17"
+description:  "Blog post about pandas eating sweets"
 ---
 
 Pandas are really sweet.

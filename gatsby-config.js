@@ -3,7 +3,9 @@
 //-----------------------------------------------------------------------------
 module.exports = {
   siteMetadata: {
-    title: `Blooger`,
+    title:        `Blooger`,
+    siteUrl:      `https://www.blooger.com`,
+    description:  `Blog starter kit for gatsbyjs using bootstrap`,
   },
   plugins: [
     `gatsby-plugin-sass`,

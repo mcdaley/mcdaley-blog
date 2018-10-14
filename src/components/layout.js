@@ -1,13 +1,14 @@
 //-----------------------------------------------------------------------------
-// src/layout/layout.js
+// src/components/layout.js
 //-----------------------------------------------------------------------------
-import React      from 'react'
-import { Helmet } from 'react-helmet'
+import React                    from 'react'
+import { Helmet }               from 'react-helmet'
 
-import Navbar     from './navbar'
-import Footer     from './footer'
+import Navbar                   from './navbar'
+import Footer                   from './footer'
 
 const Layout = ({ children }) => {
+
   return ( 
     <div id="application">
       <Helmet>
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
               sizes = "96x96"
               href  = "/icons/favicon-96x96.png" />
       </Helmet>
+
       <Navbar />
       <div className="main-content container fluid">
         {children}

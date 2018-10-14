@@ -8,6 +8,7 @@ import Img            from 'gatsby-image'
 import Layout         from '../components/layout'
 import Header         from '../components/header'
 import MySkills       from '../components/my-skills.js'
+import SEO            from '../components/seo'
 
 export default ({ data }) => (
   <Layout>

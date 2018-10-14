@@ -1,7 +1,8 @@
 ---
-title:  "Pandas Eating Bananas"
-path:   "pandas-eating-bananas"
-date:   "2018-09-20"
+title:        "Pandas Eating Bananas"
+path:         "pandas-eating-bananas"
+date:         "2018-09-20"
+description:  "Blog post about pandas eating bananas"
 ---
 
 Do Pandas eat bananas? Check out this short video that shows yes! pandas do

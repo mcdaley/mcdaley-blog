@@ -11,11 +11,14 @@ import Layout             from '../components/layout'
 import BloggerInfo        from '../components/blogger-info'
 import MobileBloggerInfo  from '../components/mobile-blogger-info'
 import BlogPosts          from '../components/blog-posts'
+import SEO                from '../components/seo'
 //** import BlogPostsHeader    from '../components/blog-posts-header'
 
 export default ({ data }) => {
   return (
     <Layout>
+      <SEO site={data.site} isBlogPost={false} />
+
       <div className="row">
         <div className="col-md-3 d-none d-md-block">
           <BloggerInfo  data = {data} />
@@ -63,6 +66,13 @@ export const fixedImage = graphql`
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+        siteUrl
+        description
+      }
+    },
     authorImage: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
       ...fluidImage
     },
@@ -78,6 +88,7 @@ export const query = graphql`
             title
             path
             date(formatString: "DD MMMM, YYYY")
+            description
           }
           fields {
             slug

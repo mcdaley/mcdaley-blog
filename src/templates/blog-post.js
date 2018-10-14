@@ -6,6 +6,7 @@ import { graphql }        from 'gatsby'
 
 import Layout             from '../components/layout'
 import PrevNextPostLink   from '../components/prev-next-post-links'
+import SEO                from '../components/seo'
 
 export default ({ data, location,  pathContext}) => {
   const post          = data.markdownRemark
@@ -15,6 +16,7 @@ export default ({ data, location,  pathContext}) => {
 
   return (
     <Layout>
+      <SEO post={post} isBlogPost={true} />
       <div className="row">
         <div className="col-12">
           <h1>{post.frontmatter.title}</h1>
@@ -33,6 +35,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        path
+        date
+        description
       }
     }
   }

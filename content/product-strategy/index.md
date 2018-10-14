@@ -1,7 +1,8 @@
 ---
-title:  "What is your product strategy"
-path:   "what-is-your-product-strategy"
-date:   "2018-09-23"
+title:        "What is your product strategy"
+path:         "what-is-your-product-strategy"
+date:         "2018-09-23"
+description:  "Most companies do not have a coherent product strategy"
 ---
 
 ## Overview
