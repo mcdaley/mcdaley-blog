@@ -13,11 +13,12 @@ import MobileBloggerInfo  from '../components/mobile-blogger-info'
 import BlogPosts          from '../components/blog-posts'
 import SEO                from '../components/seo'
 //** import BlogPostsHeader    from '../components/blog-posts-header'
+import Blooger            from '../config/configurator'
 
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO site={data.site} isBlogPost={false} />
+      <SEO />
 
       <div className="row">
         <div className="col-md-3 d-none d-md-block">

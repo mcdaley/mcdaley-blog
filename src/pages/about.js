@@ -12,6 +12,8 @@ import SEO            from '../components/seo'
 
 export default ({ data }) => (
   <Layout>
+    <SEO />
+    
     <div>
       <Header headerText = 'About Mike Daley' />
       <Img fluid={data.blueImage.childImageSharp.fluid} className="about-img" />
