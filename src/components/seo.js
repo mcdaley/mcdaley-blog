@@ -8,15 +8,8 @@ import Config       from '../config/blooger-config'
 
 ///////////////////////////////////////////////////////////////////////////////
 // TODO: 10/13/2018
-// [x] -  REFACTOR BlogPostTemplate OUT OF BlogPost SO THAT I CAN DECONSTRUCT
-//        THE PARAMETERS PASSED TO SEO
-//    * NEED TO FIGURE OUT THE PARAMS THAT I NEED.
-// -  FOR BLOG POSTS IF "DESCRIPTION" IS NOT DEFINED THEN USE THE "EXCERPT"
-// [x] -  FIGURE OUT THE var x = a.title || b.title WHEN a = {} 
-// [x] -  FIGURE OUT HOW TO PASS IN TITLE, DESCRIPTION, AND URL PATH FOR "/about"
-//        AND "/content" PAGES W/ CURRENT SETUP. PROBABLY WANT TO ADD PARSING
-//        LOGIC TO THE Config COMPONENT.
-// [x] -  BUILD CORRECT URL FOR /about AND /content PAGES
+// -  ADD <tags> TO THE HEADER. THIS WILL MOST LIKELY BE NULL, SO I HAVE TO
+//    ADD LOGIC TO NOT ADD TO HEADER IF UNDEFINED
 // -  ADD IMAGE TO TOP OF BLOG POSTS AND ADD TO THE SEO
 // -  ADD THE "schemaOrgJSONLD" TO SEO COMPONENT
 // -  CAN I CHANGE THE <title> in <head> FOR EVERY PAGE?
@@ -37,7 +30,8 @@ class SEO extends React.Component {
 
   /**
    * Determine the title tag for the page header. For blog posts the title
-   * will be in the markdown header.
+   * will be in the markdown header and for pages the title will be in the
+   * Config component
    */
   getTitle() {
     let title       = ''
@@ -47,14 +41,6 @@ class SEO extends React.Component {
       title = this.post.frontmatter.title
     }
     else {
-      /**
-            if(this.page === '' || !pageConfig.title) {
-              title = Config.title
-            }
-            else {
-              title = pageConfig.title
-            }
-      */
      title = pageConfig.title || Config.title
     }
     
@@ -64,7 +50,8 @@ class SEO extends React.Component {
   /**
    * Determined the description tag for the page header. For blog posts the 
    * description will be in the markdown header. If the description field is
-   * not in the header it will use the excerpt from the post.
+   * not in the header it will use the excerpt from the post. For pages the 
+   * title will be in the Config component
    */
   getDescription() {  
     let description = ''
@@ -74,22 +61,16 @@ class SEO extends React.Component {
       description = this.post.frontmatter.description || this.post.excerpt
     }
     else {
-      /** 
-            if(this.page === '' || !pageConfig.description) {
-              description = Config.description
-            }
-            else {
-              description = pageConfig.description
-            }
-      */
-     description = pageConfig.description || Config.description
+      description = pageConfig.description || Config.description
     }
-    //** console.log(`SEO Description= `, description)
+    
     return description
   }
 
   /**
-   * Determine the url tag for the page header.
+   * Determine the url tag for the page header. For blog posts it will be in
+   * the header for the markdown file and for pages it will be in the 
+   * Config component.
    */
   getUrl() {
     let url         = ''
@@ -99,14 +80,6 @@ class SEO extends React.Component {
       url = `${Config.siteUrl}/${this.post.frontmatter.path}`
     }
     else {
-      /** 
-            if(this.page === '' || !pageConfig.url) {
-              url = Config.siteUrl
-            }
-            else {
-              url = pageConfig.url
-            }
-      */
       url = pageConfig.url || Config.siteUrl
     }
 
