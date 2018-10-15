@@ -12,8 +12,6 @@ import BloggerInfo        from '../components/blogger-info'
 import MobileBloggerInfo  from '../components/mobile-blogger-info'
 import BlogPosts          from '../components/blog-posts'
 import SEO                from '../components/seo'
-//** import BlogPostsHeader    from '../components/blog-posts-header'
-import Blooger            from '../config/configurator'
 
 export default ({ data }) => {
   return (
