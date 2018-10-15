@@ -12,7 +12,7 @@ import SEO            from '../components/seo'
 
 export default ({ data }) => (
   <Layout>
-    <SEO />
+    <SEO page="about" />
     
     <div>
       <Header headerText = 'About Mike Daley' />

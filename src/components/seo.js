@@ -22,24 +22,50 @@ import Config       from '../config/blooger-config'
 // -  CAN I CHANGE THE <title> in <head> FOR EVERY PAGE?
 ///////////////////////////////////////////////////////////////////////////////
 
-const SEO = ({ post, isBlogPost=false, page='' }) => {
-  //let postMeta  = post || {}
-  //let siteMeta  = site || {}
+class SEO extends React.Component {
 
-  const title       = isBlogPost ? post.frontmatter.title       : Config.title
-  const description = isBlogPost ? post.frontmatter.description : Config.description
-  const url         = isBlogPost ? `${Config.siteUrl}/${post.frontmatter.path}` : Config.siteUrl
+  constructor(props) {
+    super(props)
+    this.post       = props.post        || {}
+    this.isBlogPost = props.isBlogPost  || false
+    this.page       = props.page        || ''
 
-  return(
-    <Helmet>
-      {/* General tags */}
-      <meta name="description"  content = {description} />
+    this.getTitle       = this.getTitle.bind(this)
+    this.getDescription = this.getDescription.bind(this)
+    this.getUrl         = this.getUrl.bind(this)
+  }
 
-      {/* OpenGraph tags */}
-      <meta property="og:title" content = {title} />
-      <meta property="og:url"   content = {url} />
-    </Helmet> 
-  )
+  getTitle() {
+    const  title = this.isBlogPost ? this.post.frontmatter.title : Config.title
+    return title
+  }
+
+  getDescription() {
+    const  description = this.isBlogPost ? this.post.frontmatter.description : Config.description
+    return description
+  }
+
+  getUrl() {
+    const  url = this.isBlogPost ? `${Config.siteUrl}/${this.post.frontmatter.path}` : Config.siteUrl
+    return url
+  }
+
+  render() {
+    const title       = this.getTitle()
+    const description = this.getDescription()
+    const url         = this.getUrl()         
+
+    return(
+      <Helmet>
+        {/* General tags */}
+        <meta name="description"  content = {description} />
+
+        {/* OpenGraph tags */}
+        <meta property="og:title" content = {title} />
+        <meta property="og:url"   content = {url} />
+      </Helmet> 
+    )
+  }
 }
 
 export default SEO
