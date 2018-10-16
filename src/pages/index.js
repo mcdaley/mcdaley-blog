@@ -5,7 +5,6 @@ import React              from 'react'
 import { graphql }        from 'gatsby'
 
 import '../scss/blooger-bootstrap.scss'
-import 'bootstrap'                        // Imports Bootstrap JavaScript
 
 import Layout             from '../components/layout'
 import BloggerInfo        from '../components/blogger-info'

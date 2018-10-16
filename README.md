@@ -18,17 +18,18 @@ styling.
 - [x] See if I can place assets in '/static' and refer via '/static/'
 - [x] Add favicons and images so I can identify the tab on my browser
 - [x] Add links to previous and next blog entries
+- [] Add **Netlify** plugin and deploy production version of the site
+- [] Link www.mcdaley.com to Netlify page, so I can add to my resume
+- [] Add **Contact** section with a form to email me
+- [] Add **Comments** section to blog posts
+- [] Add "404 page not found" page
 - [] Use MouseEnter and MouseLeave events to change CSS for next and previous post links
-- [] Copy the font styles in the example blog link that I have on my laptop
+- [x] Copy the font styles in the example blog link that I have on my laptop
 - [] Create standard text formatting in the website.
 - [] Refactor the social icons in the Footer to the BloggerInfoSocialIcons
 - [] Copy repository to a new blog repository
 - [] Create a blog logo
-- [] Add **SEO** plugin and configure in the site
-- [] Add **Netlify** plugin and deploy production version of the site
-- [] Link www.mcdaley.com to Netlify page, so I can add to my resume
-- [] Add **Comments** section to blog posts
-- [] Add **Contact** section with a form to email me
+- [x] Add **SEO** plugin and configure in the site
 - [] Add **Search** form using 3rd party plugin
 
 ### Bugs:
