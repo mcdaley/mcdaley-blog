@@ -11,7 +11,7 @@ import Config       from '../config/blooger-config'
 // -  ADD <tags> TO THE HEADER. THIS WILL MOST LIKELY BE NULL, SO I HAVE TO
 //    ADD LOGIC TO NOT ADD TO HEADER IF UNDEFINED
 // -  ADD IMAGE TO TOP OF BLOG POSTS AND ADD TO THE SEO
-// -  ADD THE "schemaOrgJSONLD" TO SEO COMPONENT
+// [x] -  ADD THE "schemaOrgJSONLD" TO SEO COMPONENT
 // -  CAN I CHANGE THE <title> in <head> FOR EVERY PAGE?
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -19,13 +19,15 @@ class SEO extends React.Component {
 
   constructor(props) {
     super(props)
-    this.post           = props.post        || {}
-    this.isBlogPost     = props.isBlogPost  || false
-    this.page           = props.page        || ''
+    this.post               = props.post        || {}
+    this.isBlogPost         = props.isBlogPost  || false
+    this.page               = props.page        || ''
 
-    this.getTitle       = this.getTitle.bind(this)
-    this.getDescription = this.getDescription.bind(this)
-    this.getUrl         = this.getUrl.bind(this)
+    this.getTitle           = this.getTitle.bind(this)
+    this.getDescription     = this.getDescription.bind(this)
+    this.getUrl             = this.getUrl.bind(this)
+    this.getDatePublished   = this.getDatePublished.bind(this)
+    this.getSchemaOrgJSONLD = this.getSchemaOrgJSONLD.bind(this)
   }
 
   /**
@@ -86,19 +88,115 @@ class SEO extends React.Component {
     return url
   }
 
+  /**
+   * Determine the date the blog post was published
+   */
+  getDatePublished() {
+    ///////////////////////////////////////////////////////////////////////////
+    // TODO: 10/15/2018
+    // -  NEED TO GET THE DATE PUBLISHED FROM THE CURRENT DATE IF THE 
+    //    MARKDOWN HEADER DOES NOT HAVE A DATE DEFINED.
+    ///////////////////////////////////////////////////////////////////////////
+    const  datePublished = this.isBlogPost ? this.post.frontmatter.date : "2018-09-17"
+    return datePublished
+  }
+
+  /**
+   * Build the JSON-LD to as a <script> in the <head>. To validate the JSON-LD 
+   * structure copy and past the contents of the <script type="application/ld+json">
+   * tag in the Google structured data languate tool at:
+   * 
+   *  https://search.google.com/structured-data/testing-tool/u/0/
+   * 
+   * @param {*} title 
+   * @param {*} url 
+   * @param {*} description 
+   */
+  getSchemaOrgJSONLD(title, url, description) {
+
+    //
+    // Define structure of the page using schema.org
+    //
+    const schemaOrgJSONLD = [
+      {
+        '@context':     'https://schema.org',
+        '@type':        'WebSite',
+        url,
+        name:           title,
+        alternateName:  Config.title,
+      },
+    ]
+
+    return this.isBlogPost
+      ? [
+          ...schemaOrgJSONLD,
+          {
+            '@context':       'https://schema.org',
+            '@type':          'BreadcrumbList',
+            itemListElement:  [
+              {
+                '@type':    'ListItem',
+                position:   1,
+                item: {
+                  '@id':    url,
+                  name:     title,
+                },
+              },
+            ],
+          },
+          {
+            '@context':       'https://schema.org',
+            '@type':          'BlogPosting',
+            url,
+            name:             title,
+            headLine:         title,
+            datePublished:    this.getDatePublished(),
+            description,
+            image:            {
+              '@type':        'ImageObject',
+              url:            Config.logo,
+            },
+            author: {
+              '@type':        'Person',
+              name:           'Mike Daley',
+            },
+            publisher: {
+              '@type':        'Organization',
+              url:            'https://mcdaley.com',
+              name:           'Mike Daley',
+              logo:           {
+                '@type':      'ImageObject',
+                url:          Config.logo,
+              },
+            },
+            mainEntityOfPage: {
+              '@type':        'WebSite',
+              '@id':          Config.siteUrl,
+            },
+          }
+        ]
+      : schemaOrgJSONLD
+  }
+
   render() {
     const title       = this.getTitle()
     const description = this.getDescription()
-    const url         = this.getUrl()         
+    const url         = this.getUrl()     
 
     return(
       <Helmet>
         {/* General tags */}
         <meta name="description"  content = {description} />
 
+        {/* Schema.org tags */}
+        <script type="application/ld+json">
+          {JSON.stringify( this.getSchemaOrgJSONLD(title, description, url) )}
+        </script>
+
         {/* OpenGraph tags */}
         <meta property="og:title" content = {title} />
         <meta property="og:url"   content = {url} />
+        {this.isBlogPost ? <meta property="og:type" content="article" /> : null}
       </Helmet> 
     )
   }
