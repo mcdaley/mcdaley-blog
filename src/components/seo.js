@@ -40,7 +40,7 @@ class SEO extends React.Component {
     let pageConfig  = Config.pages[this.page] || {}
 
     if(this.isBlogPost) {
-      title = this.post.frontmatter.title
+      title = `${Config.baseUrl}: ${this.post.frontmatter.title}`
     }
     else {
      title = pageConfig.title || Config.title
@@ -185,6 +185,9 @@ class SEO extends React.Component {
 
     return(
       <Helmet>
+        {/* Page Title */}
+        <title>{title}</title>
+
         {/* General tags */}
         <meta name="description"  content = {description} />
 

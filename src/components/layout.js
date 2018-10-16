@@ -6,6 +6,7 @@ import { Helmet }               from 'react-helmet'
 
 import Navbar                   from './navbar'
 import Footer                   from './footer'
+import Config                   from '../config/blooger-config'
 
 const Layout = ({ children }) => {
 
@@ -13,7 +14,8 @@ const Layout = ({ children }) => {
     <div id="application">
       <Helmet>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <title>Mike Ds Awesome Blog</title>
+        <title>{Config.title}</title>
+
         <link rel   = "stylesheet"
               href  = "https://fonts.googleapis.com/css?family=Roboto"
               media = "all" />

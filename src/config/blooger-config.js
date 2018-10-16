@@ -2,23 +2,25 @@
 // src.config/index.js
 //-----------------------------------------------------------------------------
 
-const SITE_URL = `https://www.blooger.com`
+const SITE_URL    = `https://www.mcdaley.com`
+const SITE_TITLE  = `mcdaley.com`
 
 const Config = {
-  title:        `Blooger`,
+  title:        `${SITE_TITLE}: Mike Daley's Product Management Blog`,
   siteUrl:      SITE_URL,
-  description:  `Blog starter kit for gatsbyjs using bootstrap`,
-  logo:         `https://www.blooger.com/icons/favicon-32x32.png`,
+  baseUrl:      SITE_TITLE,
+  description:  `Mike Daley's blog - connecting the dots between product management and software development`,
+  logo:         `${SITE_URL}/icons/favicon-32x32.png`,
 
   pages: {
     about: {
-      title:        `About Blooger`,
-      description:  `Enter description of the about page`,
+      title:        `${SITE_TITLE}: About Mike Daley - Product Manager and Developer`,
+      description:  `About Mike Daley - Product Manager and Developer`,
       url:          `${SITE_URL}/about`,
     },
     content: {
-      title:        `Contact Blooger`,
-      description:  `Enter description for contact page`,
+      title:        `${SITE_TITLE}: Contact Mike Daley - Product Manager and Developer`,
+      description:  `Contact Mike Daley - Product Manager and Developer`,
       url:          `${SITE_URL}/contact`,
     },
   }
