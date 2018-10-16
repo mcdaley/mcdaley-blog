@@ -11,6 +11,7 @@ const Config = {
   baseUrl:      SITE_TITLE,
   description:  `Mike Daley's blog - connecting the dots between product management and software development`,
   logo:         `${SITE_URL}/icons/favicon-32x32.png`,
+  brand:        `MCDALEY.COM`,
 
   pages: {
     about: {
