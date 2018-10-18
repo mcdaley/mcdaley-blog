@@ -4,6 +4,7 @@
 import React              from 'react'
 import { graphql }        from 'gatsby'
 
+//* import 'bootstrap/js/dist/collapse'       // Moved to gatsby-browser.js
 import '../scss/blooger-bootstrap.scss'
 
 import Layout             from '../components/layout'
