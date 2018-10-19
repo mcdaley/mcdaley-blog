@@ -20,9 +20,9 @@ styling.
 - [x] Add links to previous and next blog entries
 - [x] Add **Netlify** plugin and deploy production version of the site
 - [x] Link www.mcdaley.com to Netlify page
-- [] Dynamically change <title> and <meta name="og:title"> tags on every page, 
-     "mcdaley.com: Mike Daley Product Manager and Software Developer",
-     "mcdaley.com: About Mike Daley", "mcdaley.com: Blog Title", ...
+- [x] Dynamically change <title> and <meta name="og:title"> tags on every page, 
+      "mcdaley.com: Mike Daley Product Manager and Software Developer",
+      "mcdaley.com: About Mike Daley", "mcdaley.com: Blog Title", ...
 - [] Add **Contact** section with a form to email me
 - [] Add **Comments** section to blog posts
 - [] Add "404 page not found" page

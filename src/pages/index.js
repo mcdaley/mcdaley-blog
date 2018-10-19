@@ -78,6 +78,13 @@ export const query = graphql`
     authorMobileImage: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
       ...fixedImage
     },
+    backgroundMobileImage: file(relativePath: { eq: "Binary_Blue_Bkgrd.jpeg" }) {
+      childImageSharp {
+        fluid(maxHeight: 128, maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    },
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
