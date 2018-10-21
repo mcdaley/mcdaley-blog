@@ -52,9 +52,35 @@
   color:                  $gray-500;
 }
 
+//
+// CSS for mobile blogger info component on index.js mobile screens
+//
+.card.mobile-blogger-info-card {
+  border:                 none;
+}
+
+.mobile-blogger-info-body {
+  margin-top:             -3.00rem;
+}
+
 .mobile-blogger-info {
   margin-bottom:          1.50rem;
+  background-color:       $cobalt;
+  padding:                1.00rem 1.00rem 0.50rem 1.00rem;
+  margin-right:           2.00rem;
+  margin-left:            2.00rem;
 }
+
+.mobile-blogger-info-media-body {
+  z-index:                400; 
+  padding-top:            0.00rem;
+}
+
+.mobile-blogger-info-header {
+  color:                  $white;
+  padding-top:            0.30rem;
+}
+
 
 .blogger-info {
   border-right:           1px solid $gray-300;

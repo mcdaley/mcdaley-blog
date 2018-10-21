@@ -11,18 +11,17 @@ import Img                    from 'gatsby-image'
  */
 export default function MobileBloggerInfo({ data }) {
   return (
-    <div className="card" style={{border: "none"}}>
+    <div className="card mobile-blogger-info-card">
       <Img className  = "card-img" 
             fluid     = {data.backgroundMobileImage.childImageSharp.fluid} 
             alt       = "Card image" />
-      <div className="" style={{marginTop: "-3.0rem"}}>
-        <div className="media mobile-blogger-info rounded" 
-              style={{backgroundColor: "#0024D6", padding: "1.00rem", paddingBottom: "0.50rem", marginRight: "2.0rem", marginLeft: "2.0rem"}}>
+      <div className="mobile-blogger-info-body">
+        <div className="media mobile-blogger-info rounded">
           <Img  className = "mr-3 rounded-circle align-self-top" 
                 fixed     = {data.authorMobileImage.childImageSharp.fixed} />
-          <div className="media-body" style={{zIndex: "400", paddingTop: "0.0rem"}}>
+          <div className="media-body mobile-blogger-info-media-body">
             <h4 className="mt-0" style={{color: "white"}}>&nbsp;</h4>
-            <h4 className="mt-0" style={{color: "white", paddingTop: "0.30rem"}}>Mike Daley</h4>
+            <h4 className="mt-0 mobile-blogger-info-header">Mike Daley</h4>
           </div>
         </div>
       </div>
