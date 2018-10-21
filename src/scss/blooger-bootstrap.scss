@@ -184,6 +184,32 @@ a.prev-post-link, a.next-post-link {
   }
 }
 
+//---------------------------------------------------------
+// About page styles
+//---------------------------------------------------------
+.section-header {
+  margin-bottom:          2.00rem;
+  background-image:       url('../images/Binary_Blue_Bkgrd.jpg');
+  width:                  100%;
+}
+
+.sub-section-header {
+  margin-top:             2.00rem;
+  margin-bottom:          2.00rem;
+  background-image:       url('../images/Software_Code.jpg');
+  width:                  100%;
+}
+
+.section-header-content {
+  background-color:       transparent;
+}
+
+.section-header-title {
+  color:                  $white;
+  text-align:             center;    
+  padding:                0.50rem 1.00rem;
+}
+
 //
 // Technical Skill Styles in About page
 //

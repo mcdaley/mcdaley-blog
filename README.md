@@ -25,7 +25,7 @@ styling.
       "mcdaley.com: About Mike Daley", "mcdaley.com: Blog Title", ...
 - [] Add **Contact** section with a form to email me
 - [] Add **Comments** section to blog posts
-- [] Add "404 page not found" page
+- [] Add "404 page not found" page ()
 - [] Use MouseEnter and MouseLeave events to change CSS for next and previous post links
 - [] Update json-ld to look for Mike or Michael for my first name
 - [] Add my resume with logos (use LinkedIn profile)

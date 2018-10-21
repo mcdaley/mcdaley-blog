@@ -1,22 +1,21 @@
 //-----------------------------------------------------------------------------
 // src/pages/about.js
 //-----------------------------------------------------------------------------
-import React          from 'react'
-import { graphql }    from 'gatsby'
-import Img            from 'gatsby-image'
+import React              from 'react'
+import { graphql }        from 'gatsby'
 
-import Layout         from '../components/layout'
-import Header         from '../components/header'
-import MySkills       from '../components/my-skills.js'
-import SEO            from '../components/seo'
+import Layout             from '../components/layout'
+import MySkills           from '../components/my-skills.js'
+import SEO                from '../components/seo'
+import SectionHeader      from '../components/section-header'
+import SubSectionHeader   from '../components/sub-section-header'
 
 export default ({ data }) => (
   <Layout>
     <SEO page="about" />
     
     <div>
-      <Header headerText = 'About Mike Daley' />
-      <Img fluid={data.blueImage.childImageSharp.fluid} className="about-img" />
+      <SectionHeader label="About Mike Daley" fluidImage={data.blueImage.childImageSharp.fluid} />
       <p>
         My name is Mike Daley and I am a Product Manager and Software Engineer 
         living in San Francisco with a track record of delivering successful 
@@ -36,10 +35,9 @@ export default ({ data }) => (
         I am always interested in new challenges. Reach out to me at &nbsp;
         <a href="mailto://mike@mcdaley.com">mike@mcdaley.com</a> to connect.
       </p>
-
       <hr />
-      <h2 className="about-header">Technical Skills</h2>
-      <Img fluid={data.codeImage.childImageSharp.fluid} className="about-img" />
+      
+      <SubSectionHeader label="Technical Skills" />
       <div className="row">
         <div className="col-6 col-sm-6 col-md-3">
           <MySkills skill="ruby_on_rails" />
