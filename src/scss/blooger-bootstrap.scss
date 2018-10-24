@@ -314,6 +314,14 @@ body {
   color:                  $black-222;
 }
 
+//
+// Move the caption to the top of the carousel
+//
+.carousel-caption {
+  top:                    10px;
+  padding-top:            0;
+}
+
 footer {
   border-top:             1px solid $gray-400;
   color:                  $gray-800;

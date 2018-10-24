@@ -15,7 +15,7 @@ export default ({ data }) => (
   <Layout>
     <SEO page="about" />
 
-    <h1>About Michael Daley</h1>
+    {/* <h1>About Mike Daley</h1> */}
     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -31,7 +31,7 @@ export default ({ data }) => (
           <Img className="d-block w-100" fluid={data.robotImage.childImageSharp.fluid} alt="Hello" />
           <div className="carousel-caption d-md-block">
             <div className="carousel-caption-content rounded">
-              <h5>Hello, I'm Michael Daley</h5>
+              <h5>Hello, I'm Mike Daley</h5>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default ({ data }) => (
           <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Hawaii Vacation" />
           <div class="carousel-caption d-md-block">
             <div className="carousel-caption-content rounded">
-              <h5>When I'm not working, I enjoy traveling, spending time with my family,</h5>
+              <h5>When not working, I enjoy traveling, spending time with my family,</h5>
             </div>
           </div>
         </div>
@@ -96,27 +96,29 @@ export default ({ data }) => (
     <hr />
     
     <div>
-      <h2 style={{color: "red", marginTop: "2.00rem"}}>Old About Mike</h2>
-      <p>
-        My name is Mike Daley and I am a Product Manager and Software Engineer 
-        living in San Francisco with a track record of delivering successful 
-        web and mobile experiences by defining winning strategies, acting as 
-        the business owner, and leading customer driven cross-functional 
-        agile design and development teams in startup, mid-market, and 
-        large organizations. 
-      </p>
-      <p>
-        From my diverse experiences as a Product Manager and Software Engineer, 
-        I want to provide readers insight on how to build great products by 
-        creating a product vision, aligning cross-functional teams, and 
-        implementing a sustainable development process.
-      </p>
+      { /** 
+          <h2 style={{color: "red", marginTop: "2.00rem"}}>Old About Mike</h2>
+          <p>
+            My name is Mike Daley and I am a Product Manager and Software Engineer 
+            living in San Francisco with a track record of delivering successful 
+            web and mobile experiences by defining winning strategies, acting as 
+            the business owner, and leading customer driven cross-functional 
+            agile design and development teams in startup, mid-market, and 
+            large organizations. 
+          </p>
+          <p>
+            From my diverse experiences as a Product Manager and Software Engineer, 
+            I want to provide readers insight on how to build great products by 
+            creating a product vision, aligning cross-functional teams, and 
+            implementing a sustainable development process.
+          </p>
 
-      <p>
-        I am always interested in new challenges. Reach out to me at &nbsp;
-        <a href="mailto://mike@mcdaley.com">mike@mcdaley.com</a> to connect.
-      </p>
-      <hr />
+          <p>
+            I am always interested in new challenges. Reach out to me at &nbsp;
+            <a href="mailto://mike@mcdaley.com">mike@mcdaley.com</a> to connect.
+          </p>
+          <hr />
+      */ }
       
       <SubSectionHeader label="Technical Skills" />
       <div className="row">
@@ -189,7 +191,7 @@ export default ({ data }) => (
 export const fluidAboutImage = graphql`
   fragment fluidAboutImage on File {
     childImageSharp {
-      fluid(maxWidth: 1024) {
+      fluid(maxWidth:1024) {
         ...GatsbyImageSharpFluid
       }
     }
