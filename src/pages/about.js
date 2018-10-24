@@ -3,6 +3,7 @@
 //-----------------------------------------------------------------------------
 import React              from 'react'
 import { graphql }        from 'gatsby'
+import Img                from 'gatsby-image'
 
 import Layout             from '../components/layout'
 import MySkills           from '../components/my-skills.js'
@@ -13,9 +14,89 @@ import SubSectionHeader   from '../components/sub-section-header'
 export default ({ data }) => (
   <Layout>
     <SEO page="about" />
+
+    <h1>About Michael Daley</h1>
+    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+      <ol className="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+      </ol>
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <Img className="d-block w-100" fluid={data.robotImage.childImageSharp.fluid} alt="Hello" />
+          <div className="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+              <h5>Hello, I'm Michael Daley</h5>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <Img className="d-block w-100" fluid={data.pmImage.childImageSharp.fluid} alt="Product Management" />
+          <div class="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+              <h5>For work, I build products</h5>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <Img className="d-block w-100" fluid={data.codeImage.childImageSharp.fluid} alt="Software Engineer" />
+          <div class="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+              <h5>and I do some coding</h5>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <Img className="d-block w-100" fluid={data.sfImage.childImageSharp.fluid} alt="San Francisco" />
+          <div class="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+              <h5>I live in San Francisco</h5>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Hawaii Vacation" />
+          <div class="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+              <h5>When I'm not working, I enjoy traveling, spending time with my family,</h5>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <Img className="d-block w-100" fluid={data.soccerImage.childImageSharp.fluid} alt="Playing Soccer" />
+          <div class="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+              <h5>and going to my son's games</h5>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <Img className="d-block w-100" fluid={data.poolImage.childImageSharp.fluid} alt="Swimming" />
+          <div class="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+            <h5>I stay active by swimming, running, and playing tennis</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
+      </a>
+    </div>
+    <hr />
     
     <div>
-      <SectionHeader label="About Mike Daley" fluidImage={data.blueImage.childImageSharp.fluid} />
+      <h2 style={{color: "red", marginTop: "2.00rem"}}>Old About Mike</h2>
       <p>
         My name is Mike Daley and I am a Product Manager and Software Engineer 
         living in San Francisco with a track record of delivering successful 
@@ -108,7 +189,7 @@ export default ({ data }) => (
 export const fluidAboutImage = graphql`
   fragment fluidAboutImage on File {
     childImageSharp {
-      fluid(maxWidth: 1024 maxHeight: 128) {
+      fluid(maxWidth: 1024) {
         ...GatsbyImageSharpFluid
       }
     }
@@ -117,10 +198,25 @@ export const fluidAboutImage = graphql`
 
 export const aboutQuery = graphql`
   query { 
-    blueImage: file(relativePath: {eq: "Binary_Blue_Bkgrd.jpeg"}) {
+    robotImage: file(relativePath: {eq: "about-me/vintage-robot-saying-hello.jpg"}) {
       ...fluidAboutImage
     },
-    codeImage: file(relativePath: {eq: "Software_Code.jpeg"}) {
+    pmImage: file(relativePath: {eq: "about-me/product-launch.jpg"}) {
+      ...fluidAboutImage
+    },
+    codeImage: file(relativePath: {eq: "about-me/software-code.jpg"}) {
+      ...fluidAboutImage
+    },
+    sfImage: file(relativePath: {eq: "about-me/sf-baker-beach.jpg"}) {
+      ...fluidAboutImage
+    },
+    hawaiiImage: file(relativePath: {eq: "about-me/hawaii-sunset.jpg"}) {
+      ...fluidAboutImage
+    },
+    soccerImage: file(relativePath: {eq: "about-me/kids-playing-soccer.jpg"}) {
+      ...fluidAboutImage
+    },
+    poolImage: file(relativePath: {eq: "about-me/swimming-pool.jpg"}) {
       ...fluidAboutImage
     },
   }

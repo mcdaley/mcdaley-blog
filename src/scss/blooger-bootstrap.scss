@@ -187,6 +187,18 @@ a.prev-post-link, a.next-post-link {
 //---------------------------------------------------------
 // About page styles
 //---------------------------------------------------------
+.carousel-caption-content {
+  background-color:       $gray-900;
+  opacity:                0.80;
+  padding:                0.25rem;
+
+  h5 {
+    color:                $white;
+    font-size:            2.00rem;
+    margin-bottom:        0
+  }
+}
+
 .section-header {
   margin-bottom:          2.00rem;
   background-image:       url('../images/Binary_Blue_Bkgrd.jpg');
