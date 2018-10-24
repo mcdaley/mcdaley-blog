@@ -15,94 +15,97 @@ export default ({ data }) => (
   <Layout>
     <SEO page="about" />
 
-    {/* <h1>About Mike Daley</h1> */}
-    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-      <ol className="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-      </ol>
-      <div className="carousel-inner">
-        <div className="carousel-item active">
-          <Img className="d-block w-100" fluid={data.robotImage.childImageSharp.fluid} alt="Hello" />
-          <div className="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-              <h5>Hello, I'm Mike Daley</h5>
+    <div className="row" style={{marginBottom: "3.00rem"}}>
+      <div className="col-12">
+        {/* <h1>About Mike Daley</h1> */}
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <Img className="d-block w-100" fluid={data.robotImage.childImageSharp.fluid} alt="Hello" />
+              <div className="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                  <h5>Hello, I'm Mike Daley.</h5>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Img className="d-block w-100" fluid={data.pmImage.childImageSharp.fluid} alt="Product Management" />
+              <div class="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                  <h5>For work, I build products</h5>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Img className="d-block w-100" fluid={data.codeImage.childImageSharp.fluid} alt="Software Engineer" />
+              <div class="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                  <h5>and I do some coding.</h5>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Img className="d-block w-100" fluid={data.sfImage.childImageSharp.fluid} alt="San Francisco" />
+              <div class="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                  <h5>I live in San Francisco.</h5>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Img className="d-block w-100" fluid={data.machuPichuImage.childImageSharp.fluid} alt="Hawaii Vacation" />
+              <div class="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                  <h5>When not working, I enjoy traveling,... </h5>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Ski Vacation" />
+              <div class="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                  <h5>spending time with my family,...</h5>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Img className="d-block w-100" fluid={data.soccerImage.childImageSharp.fluid} alt="Playing Soccer" />
+              <div class="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                  <h5>and going to my son's games.</h5>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <Img className="d-block w-100" fluid={data.poolImage.childImageSharp.fluid} alt="Swimming" />
+              <div class="carousel-caption d-md-block">
+                <div className="carousel-caption-content rounded">
+                <h5>I stay active by swimming, running, and playing tennis.</h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.pmImage.childImageSharp.fluid} alt="Product Management" />
-          <div class="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-              <h5>For work, I build products</h5>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.codeImage.childImageSharp.fluid} alt="Software Engineer" />
-          <div class="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-              <h5>and I do some coding</h5>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.sfImage.childImageSharp.fluid} alt="San Francisco" />
-          <div class="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-              <h5>I live in San Francisco</h5>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.machuPichuImage.childImageSharp.fluid} alt="Hawaii Vacation" />
-          <div class="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-              <h5>When not working, I enjoy traveling, </h5>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Ski Vacation" />
-          <div class="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-              <h5>spending time with my family,</h5>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.soccerImage.childImageSharp.fluid} alt="Playing Soccer" />
-          <div class="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-              <h5>and going to my son's games</h5>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.poolImage.childImageSharp.fluid} alt="Swimming" />
-          <div class="carousel-caption d-md-block">
-            <div className="carousel-caption-content rounded">
-            <h5>I stay active by swimming, running, and playing tennis</h5>
-            </div>
-          </div>
+          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+          </a>
         </div>
       </div>
-      <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="sr-only">Previous</span>
-      </a>
-      <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="sr-only">Next</span>
-      </a>
     </div>
-    <hr />
     
     <div>
       { /** 
@@ -129,7 +132,11 @@ export default ({ data }) => (
           <hr />
       */ }
       
-      <SubSectionHeader label="Technical Skills" />
+      { /* <SubSectionHeader label="Technical Skills" /> */}
+    
+
+      <h2 className="about-page-h2">Technical Skills</h2>
+    
       <div className="row">
         <div className="col-6 col-sm-6 col-md-3">
           <MySkills skill="ruby_on_rails" />
