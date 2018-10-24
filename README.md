@@ -23,6 +23,7 @@ styling.
 - [x] Dynamically change <title> and <meta name="og:title"> tags on every page, 
       "mcdaley.com: Mike Daley Product Manager and Software Developer",
       "mcdaley.com: About Mike Daley", "mcdaley.com: Blog Title", ...
+- [] Change carousel title to bottom of screen for mobile devices.
 - [] Add **Contact** section with a form to email me
 - [] Add **Comments** section to blog posts
 - [] Add "404 page not found" page ()

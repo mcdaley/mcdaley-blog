@@ -25,6 +25,7 @@ export default ({ data }) => (
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -60,10 +61,18 @@ export default ({ data }) => (
           </div>
         </div>
         <div className="carousel-item">
-          <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Hawaii Vacation" />
+          <Img className="d-block w-100" fluid={data.machuPichuImage.childImageSharp.fluid} alt="Hawaii Vacation" />
           <div class="carousel-caption d-md-block">
             <div className="carousel-caption-content rounded">
-              <h5>When not working, I enjoy traveling, spending time with my family,</h5>
+              <h5>When not working, I enjoy traveling, </h5>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Ski Vacation" />
+          <div class="carousel-caption d-md-block">
+            <div className="carousel-caption-content rounded">
+              <h5>spending time with my family,</h5>
             </div>
           </div>
         </div>
@@ -219,6 +228,9 @@ export const aboutQuery = graphql`
       ...fluidAboutImage
     },
     poolImage: file(relativePath: {eq: "about-me/swimming-pool.jpg"}) {
+      ...fluidAboutImage
+    },
+    machuPichuImage: file(relativePath: {eq: "about-me/machu-pichu-003.jpg"}) {
       ...fluidAboutImage
     },
   }
