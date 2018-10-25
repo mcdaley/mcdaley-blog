@@ -32,12 +32,12 @@ export default ({ data }) => (
           <div className="carousel-inner">
             <div className="carousel-item active">
               <Img className="d-block w-100" fluid={data.robotImage.childImageSharp.fluid} alt="Hello" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
                   <h5>Hello, I'm Mike Daley.</h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
                   <h5>Hello, I'm Mike Daley.</h5>
                 </div>
@@ -45,12 +45,12 @@ export default ({ data }) => (
             </div>
             <div className="carousel-item">
               <Img className="d-block w-100" fluid={data.pmImage.childImageSharp.fluid} alt="Product Management" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
                   <h5>For work, I build products</h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
                   <h5>For work, I build products</h5>
                 </div>
@@ -58,12 +58,12 @@ export default ({ data }) => (
             </div>
             <div className="carousel-item">
               <Img className="d-block w-100" fluid={data.codeImage.childImageSharp.fluid} alt="Software Engineer" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
                   <h5>and I do some coding.</h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
                   <h5>and I do some coding.</h5>
                 </div>
@@ -71,51 +71,51 @@ export default ({ data }) => (
             </div>
             <div className="carousel-item">
               <Img className="d-block w-100" fluid={data.sfImage.childImageSharp.fluid} alt="San Francisco" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
                   <h5>I live in San Francisco.</h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
                   <h5>I live in San Francisco.</h5>
                 </div>
               </div>
             </div>
             <div className="carousel-item">
-              <Img className="d-block w-100" fluid={data.machuPichuImage.childImageSharp.fluid} alt="Hawaii Vacation" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Hawaii Vacation" />
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
-                  <h5>When not working, I enjoy traveling,... </h5>
+                  <h5>When not working, I enjoy spending time with my family,... </h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
-                  <h5>When not working, I enjoy traveling,...</h5>
+                  <h5>When not working, I enjoy spending time with my family,...</h5>
                 </div>
               </div>
             </div>
             <div className="carousel-item">
-              <Img className="d-block w-100" fluid={data.hawaiiImage.childImageSharp.fluid} alt="Ski Vacation" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <Img className="d-block w-100" fluid={data.machuPichuImage.childImageSharp.fluid} alt="Ski Vacation" />
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
-                  <h5>spending time with my family,...</h5>
+                  <h5>traveling,...</h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
-                  <h5>spending time with my family,...</h5>
+                  <h5>traveling,...</h5>
                 </div>
               </div>
             </div>
             <div className="carousel-item">
               <Img className="d-block w-100" fluid={data.soccerImage.childImageSharp.fluid} alt="Playing Soccer" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
                   <h5>and going to my son's games.</h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
                   <h5>and going to my son's games.</h5>
                 </div>
@@ -123,12 +123,12 @@ export default ({ data }) => (
             </div>
             <div className="carousel-item">
               <Img className="d-block w-100" fluid={data.poolImage.childImageSharp.fluid} alt="Swimming" />
-              <div className="carousel-caption-top d-none d-md-block">
+              <div className="carousel-caption-top d-none d-sm-block">
                 <div className="carousel-caption-content rounded">
                   <h5>I stay active by swimming, running, and playing tennis.</h5>
                 </div>
               </div>
-              <div className="carousel-caption d-block d-md-none">
+              <div className="carousel-caption d-block d-sm-none">
                 <div className="carousel-caption-content rounded">
                   <h5>I stay active by swimming, running, and playing tennis.</h5>
                 </div>
