@@ -195,8 +195,20 @@ a.prev-post-link, a.next-post-link {
   h5 {
     color:                $white;
     font-size:            2.00rem;
-    margin-bottom:        0
+    margin-bottom:        0;
   }
+}
+
+.carousel-caption-top {
+  position:               absolute;
+  right:                  15%;
+  top:                    10px;
+  left:                   15%;
+  z-index:                10;
+  padding-top:            0;
+  padding-bottom:         20px;
+  color:                  $white;
+  text-align:             center;
 }
 
 .section-header {
@@ -322,10 +334,13 @@ body {
 //
 // Move the caption to the top of the carousel
 //
+
+/**
 .carousel-caption {
   top:                    10px;
   padding-top:            0;
 }
+**/
 
 footer {
   border-top:             1px solid $gray-400;
