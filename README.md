@@ -23,18 +23,25 @@ styling.
 - [x] Dynamically change <title> and <meta name="og:title"> tags on every page, 
       "mcdaley.com: Mike Daley Product Manager and Software Developer",
       "mcdaley.com: About Mike Daley", "mcdaley.com: Blog Title", ...
-- [] Create carousel-caption-top
-- [] Change carousel title to bottom of screen for mobile devices.
+- [x] Create carousel-caption-top
+- [x] Change carousel title to bottom of screen for mobile devices.
+- [] Remove Contact page and replace the contact links with mailto: links
+- [x] Add "404 page not found" page ()
+- [] Change all references of Michael to Mike
+- [] Remove my cartoonified picture with black and white photo
+- [] Write 2 blog posts
+- [] Update json-ld to look for Mike or Michael for my first name
+- [] Investigate reorganizing the site. Use the About page carousel
+     as the home page, add blog snippets below the carousel, and create
+     top-level nav for Blog, and Background
+- [] Add my resume with logos (use LinkedIn profile)
 - [] Add **Contact** section with a form to email me
 - [] Add **Comments** section to blog posts
-- [] Add "404 page not found" page ()
 - [] Use MouseEnter and MouseLeave events to change CSS for next and previous post links
-- [] Update json-ld to look for Mike or Michael for my first name
-- [] Add my resume with logos (use LinkedIn profile)
 - [x] Copy the font styles in the example blog link that I have on my laptop
 - [] Create standard text formatting in the website.
 - [] Refactor the social icons in the Footer to the BloggerInfoSocialIcons
-- [] Copy repository to a new blog repository
+- [x] Copy repository to a new blog repository
 - [] Create a blog logo
 - [x] Add **SEO** plugin and configure in the site
 - [] Add **Search** form using 3rd party plugin
