@@ -29,7 +29,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="col-7">
-          <h5 className="blog-footer-header">Michael Daley</h5>
+          <h5 className="blog-footer-header">Mike Daley</h5>
           <div>
             <a  href      = "https://github.com/mcdaley" 
                 className = "social-icon github-icon" 

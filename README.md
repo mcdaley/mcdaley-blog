@@ -27,7 +27,7 @@ styling.
 - [x] Change carousel title to bottom of screen for mobile devices.
 - [] Remove Contact page and replace the contact links with mailto: links
 - [x] Add "404 page not found" page ()
-- [] Change all references of Michael to Mike
+- [x] Change all references of Michael to Mike
 - [] Remove my cartoonified picture with black and white photo
 - [x] Fix 404 error page styling
 - [] Write 2 blog posts
@@ -38,6 +38,7 @@ styling.
 - [] Add my resume with logos (use LinkedIn profile)
 - [] Add **Contact** section with a form to email me
 - [] Add **Comments** section to blog posts
+- [] Move all references of "Mike Daley" to config file
 - [] Use MouseEnter and MouseLeave events to change CSS for next and previous post links
 - [x] Copy the font styles in the example blog link that I have on my laptop
 - [] Create standard text formatting in the website.
