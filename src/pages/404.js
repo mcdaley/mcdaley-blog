@@ -6,17 +6,23 @@ import { Link }           from 'gatsby'
 import { graphql }        from 'gatsby'
 import Img                from 'gatsby-image'
 
+import '../scss/blooger-bootstrap.scss'   // Re-import Bootstrap needed
+
 import Layout             from '../components/layout'
 
-export default ({data}) => (
+export default ({ data }) => (
   <Layout>
     <div className="row">
       <div className="col-12">
         <div className="error-404-container">
-          <Link to = "/"> 
+          <Link to = "/" className="text-center">
+            <img className="img-fluid" width="100%" src="/images/vintage-robot-404-error.jpg" />
+          { /**
             <Img  className = "d-block w-100" 
                   fluid     = {data.errorImage.childImageSharp.fluid} 
-                  alt       = "404 Error - Page Not Found" />
+                  alt       = "404 Error - Page Not Found" 
+            />
+          */}
           </Link>  
         </div>
       </div>

@@ -29,6 +29,7 @@ styling.
 - [x] Add "404 page not found" page ()
 - [] Change all references of Michael to Mike
 - [] Remove my cartoonified picture with black and white photo
+- [x] Fix 404 error page styling
 - [] Write 2 blog posts
 - [] Update json-ld to look for Mike or Michael for my first name
 - [] Investigate reorganizing the site. Use the About page carousel
