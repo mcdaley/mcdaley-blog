@@ -28,7 +28,8 @@ styling.
 - [] Remove Contact page and replace the contact links with mailto: links
 - [x] Add "404 page not found" page ()
 - [x] Change all references of Michael to Mike
-- [] Add blog snippets to about page
+- [x] Add blog snippets to about page
+- [] Reorganize the navigation
 - [] Remove my cartoonified picture with black and white photo
 - [x] Fix 404 error page styling
 - [] Write 2 blog posts

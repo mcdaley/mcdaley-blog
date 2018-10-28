@@ -25,11 +25,11 @@ const Navbar = () => {
             Home
           </Link>
           <Link 
-            to              = "/about" 
+            to              = "/blog" 
             className       = "nav-item nav-link"  
             activeClassName = "active"
           >
-            About
+            Blog
           </Link>
           <Link
             to              = "/contact"
