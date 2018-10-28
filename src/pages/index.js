@@ -95,6 +95,10 @@ export const query = graphql`
             path
             date(formatString: "DD MMMM, YYYY")
             description
+            cover {
+              publicURL
+              relativePath
+            }
           }
           fields {
             slug

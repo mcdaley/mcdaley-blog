@@ -156,6 +156,14 @@ export default ({ data }) => (
         <BlogPosts data={data} />
       </div>
     </div>
+
+    <div className="row">
+      <div className="col-12">
+        <h2 className="about-page-h2">
+          Current Projects
+        </h2>
+      </div>
+    </div>
     
     <div>
       { /** 
