@@ -6,6 +6,7 @@ import { graphql }        from 'gatsby'
 import Img                from 'gatsby-image'
 
 import Layout             from '../components/layout'
+import BlogPosts          from '../components/blog-posts'
 import MySkills           from '../components/my-skills.js'
 import SEO                from '../components/seo'
 import SectionHeader      from '../components/section-header'
@@ -146,6 +147,15 @@ export default ({ data }) => (
         </div>
       </div>
     </div>
+
+    <div className="row">
+      <div className="col-12">
+        <h2 className="about-page-h2">
+          Recent Blog Posts ({data.allMarkdownRemark.totalCount})
+        </h2>
+        <BlogPosts data={data} />
+      </div>
+    </div>
     
     <div>
       { /** 
@@ -279,6 +289,28 @@ export const aboutQuery = graphql`
     },
     machuPichuImage: file(relativePath: {eq: "about-me/machu-pichu-003.jpg"}) {
       ...fluidAboutImage
+    },
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            path
+            date(formatString: "DD MMMM, YYYY")
+            description
+            cover {
+              publicURL
+              relativePath
+            }
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
     },
   }
 `

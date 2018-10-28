@@ -28,6 +28,7 @@ styling.
 - [] Remove Contact page and replace the contact links with mailto: links
 - [x] Add "404 page not found" page ()
 - [x] Change all references of Michael to Mike
+- [] Add blog snippets to about page
 - [] Remove my cartoonified picture with black and white photo
 - [x] Fix 404 error page styling
 - [] Write 2 blog posts
@@ -44,6 +45,7 @@ styling.
 - [] Create standard text formatting in the website.
 - [] Refactor the social icons in the Footer to the BloggerInfoSocialIcons
 - [x] Copy repository to a new blog repository
+- [] Remove all of the old extra code
 - [] Create a blog logo
 - [x] Add **SEO** plugin and configure in the site
 - [] Add **Search** form using 3rd party plugin
