@@ -24,8 +24,8 @@ export default function Footer() {
           <h5 className="blog-footer-header">Navigation</h5>
           <nav className="nav flex-column">
             <Link to = "/">         Home    </Link>
-            <Link to = "/about">    About   </Link>
-            <Link to = "/contact">  Contact </Link>
+            <Link to = "/about">    Blog    </Link>
+            { /* <Link to = "/contact">  Contact </Link> */ }
           </nav>
         </div>
         <div className="col-7">
@@ -34,18 +34,23 @@ export default function Footer() {
             <a  href      = "https://github.com/mcdaley" 
                 className = "social-icon github-icon" 
                 target    = "_blank" 
-                rel       = "noopener noreferrer">          
+                rel       = "noopener noreferrer"
+            >          
               <i className="fab fa-github fa-2x"></i>
             </a>
             <a  href      = "https://linkedin.com/in/mcdaley" 
                 className = "social-icon linkedin-icon" 
                 target    = "_blank" 
-                rel       = "noopener noreferrer">
+                rel       = "noopener noreferrer"
+            >
               <i className="fab fa-linkedin fa-2x"></i>
             </a>
-            <Link to="/contact" className="social-icon">
+            <a  href      = "mailto:mike@mcdaley.com"
+                className = "social-icon"
+                rel       = "noopener noreferrer"
+            >
               <i className="far fa-envelope fa-2x"></i>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

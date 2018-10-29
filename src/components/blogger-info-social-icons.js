@@ -22,9 +22,12 @@ export default function BloggerInfoSocialIcons() {
           rel       = "noopener noreferrer">
         <i className="fab fa-linkedin fa-2x"></i>
       </a>
-      <Link to="/contact" className="social-icon">
+      <a  href      = "mailto:mike@mcdaley.com"
+          className = "social-icon"
+          rel       = "noopener noreferrer"
+      >
         <i className="far fa-envelope fa-2x"></i>
-      </Link>
+      </a>
     </div>
   )
 }
