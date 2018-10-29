@@ -25,18 +25,11 @@ const Navbar = () => {
             Home
           </Link>
           <Link 
-            to              = "/blog" 
+            to              = "/about" 
             className       = "nav-item nav-link"  
             activeClassName = "active"
           >
-            Blog
-          </Link>
-          <Link 
-            to              = "/resume" 
-            className       = "nav-item nav-link"  
-            activeClassName = "active"
-          >
-            Background
+            About
           </Link>
           { /** 
               <Link
