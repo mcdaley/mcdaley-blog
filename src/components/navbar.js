@@ -31,6 +31,13 @@ const Navbar = () => {
           >
             Blog
           </Link>
+          <Link 
+            to              = "/resume" 
+            className       = "nav-item nav-link"  
+            activeClassName = "active"
+          >
+            Background
+          </Link>
           { /** 
               <Link
                 to              = "/contact"
