@@ -8,7 +8,7 @@ const Resume = () => {
   return (
     <div className="resume">
     
-      <h1 className="about-page-h2">Background</h1>
+      <h2 className="about-page-h2">Background</h2>
       { /* CareerQB */ }
       <div className="media job-snippet">
         <img  className = "mr-3" 

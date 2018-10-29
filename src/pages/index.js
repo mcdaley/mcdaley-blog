@@ -7,7 +7,7 @@ import Img                from 'gatsby-image'
 
 import Layout             from '../components/layout'
 import BlogPosts          from '../components/blog-posts'
-import MySkills           from '../components/my-skills.js'
+import MySkillsList       from '../components/my-skills-list.js'
 import SEO                from '../components/seo'
 import SectionHeader      from '../components/section-header'
 import SubSectionHeader   from '../components/sub-section-header'
@@ -165,7 +165,7 @@ export default ({ data }) => (
       </div>
     </div>
     
-    <div>
+    <div className="row">
       { /** 
           <h2 style={{color: "red", marginTop: "2.00rem"}}>Old About Mike</h2>
           <p>
@@ -189,55 +189,18 @@ export default ({ data }) => (
           </p>
           <hr />
       */ }
+    </div>
       
-      { /* <SubSectionHeader label="Technical Skills" /> */}
+    { /* <SubSectionHeader label="Technical Skills" /> */}
+    <div className="row">
+      <div className="col-12">
+        <MySkillsList />
+      </div>
+    </div>
     
 
-      <h2 className="about-page-h2">Technical Skills</h2>
-    
-      <div className="row">
-        <div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="ruby_on_rails" />
-        </div> 
-        <div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="javascript" />
-        </div>
-        <div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="reactjs" />
-        </div>
-        <div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="html5" />
-        </div>
-      </div>
-      <div className="row">
-        < div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="postgresql" />
-        </div>
-        < div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="sass" />
-        </div>
-        < div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="digital_ocean" />
-        </div>
-        < div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="linux" />
-        </div>
-      </div>
-      <div className="row">
-        < div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="sql" />
-        </div>
-        < div className="col-6 col-sm-6 col-md-3">
-          <MySkills skill="c_plus_plus" />
-        </div>
-        < div className="col-6 col-sm-6 col-md-3">
-          &nbsp;
-        </div>
-        < div className="col-6 col-sm-6 col-md-3">
-          &nbsp;
-        </div>
-      </div>
       
+    <div className="row">
       <hr />
       <h2>Blog Ideas</h2>
       <p>
