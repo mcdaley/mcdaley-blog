@@ -1,19 +1,18 @@
 ---
-title:        "What is your product strategy"
+title:        "Can You Say What Your Product Strategy Is?"
 path:         "what-is-your-product-strategy"
 date:         "2018-09-23"
 cover:        "brainstorm-blocks.jpg"
-description:  "Most companies do not have a coherent product strategy"
+excerpt:      "Can you summarize your product’s strategy in 35 words or less? If yes, can your colleagues put it the same way? Organizations fail to appreciate the necessity of having a simple, clear, succinct strategy statement that everyone can internalize and use as a guiding light for making difficult product choices."
 ---
 
-<div style="background-color:#cccccc;margin-bottom:2.00rem;">
+<div style="background-color:#ffffff;margin-bottom:2.00rem;">
   <img  src     = "./brainstorm-blocks.jpg" 
-        class   = "img-fluid" 
+        class   = "img-fluid"
+        style   = "max-height:256px;" 
         alt     = "What is your product strategy" 
   />
 </div>
-
-# Can You Say What Your Product Strategy Is?
 
 Can you summarize your product’s strategy in 35 words or less? If yes, can your colleagues put it the same way? Organizations fail to appreciate the necessity of having a simple, clear, succinct strategy statement that everyone can internalize and use as a guiding light for making difficult product choices. 
 
@@ -52,7 +51,7 @@ Now that we have defined the elements of a product strategy statement, we’ll c
 
 **Acme Ecommerce Strategy Statement**
 <blockquote class="blockquote">
-  <p class="mb-0" style="padding:1.0rem;background-color:#588BAE">
+  <p class="mb-0" style="padding:1.0rem;background-color:#adb5bd">
     To provide 1 million product recommendations per day by 2020 
     by providing our partner consumer goods companies with a cloud
     based patented AI/ML recommendation engine optimized for 
