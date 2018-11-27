@@ -22,3 +22,5 @@ Many times systems are made to complicated before all of the business rules
 are known and/or defined. The over designing of the system can increase the
 time to market by increasing development and testing time. Many times a
 simple architecture will meet your performance goals.
+
+## Work In Progress

@@ -6,6 +6,10 @@ styling.
 ## BLOG DEVELOPMENT
 
 ### To Do:
+- [] Replace photo with one from LinkedIn
+- [] Write outline for 2nd blog post
+- [] Final draft of my 1st blog post
+- [] Increase max size for blog post excerpts
 - [x] Add info sidebar with picture, short blurb, and icons with my skills
 - [x] Cleanup styles on the sidebar, look at margin-right for image.
 - [x] Look at adding a vertical line separating the sidebar and main content

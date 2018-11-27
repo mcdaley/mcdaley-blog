@@ -188,24 +188,6 @@ export default ({ data }) => (
       */ }
     </div>
         
-    <div className="row" style={{marginTop: "3.00rem"}}>
-      <div className="col-12">
-        <h2 className="about-page-h2">Blog Ideas</h2>
-        <p>
-          List my first 5 blog ideas so that I can form a picture about
-          what I am trying to communicate in my blog.
-        </p>
-        <ul>
-          <li>Strategy</li>
-          <li>Opportunity Cost (Technical Debt) - only refactor code as new stories affect it</li>
-          <li>Basic Math for Architectures - Minimum Viable Architecure - Do not know all business rules</li>
-          <li>User personas</li>
-          <li>Always be user driven (on the phone call change list)</li>
-          <li>Writing stories aligned to developer flows</li>
-          <li>Sprint Deliverables</li>
-        </ul>
-      </div>
-    </div>
   </Layout>
 )
 

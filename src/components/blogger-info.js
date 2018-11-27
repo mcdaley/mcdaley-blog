@@ -9,7 +9,9 @@ import BloggerInfoSocialIcons from '../components/blogger-info-social-icons'
 export default function BloggerInfo({ data }) {
   return (
     <div className="blogger-info">
-      <Img className="rounded-circle" fluid={data.authorImage.childImageSharp.fluid} />
+      { /* <Img className="rounded-circle" fluid={data.authorImage.childImageSharp.fluid} /> */ }
+      <Img  className = "rounded-circle" 
+                fixed = {data.authorMobileImage.childImageSharp.fixed} />
       <h4 className="text-left" style={{ marginTop: "1.50rem"}}>Mike Daley</h4>
       <p className="tagline">
         Connecting the dots between product management and software development

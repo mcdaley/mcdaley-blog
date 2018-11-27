@@ -72,10 +72,10 @@ export const query = graphql`
         description
       }
     },
-    authorImage: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
+    authorImage: file(relativePath: { eq: "Mike_LinkedIn.png" }) {
       ...fluidImage
     },
-    authorMobileImage: file(relativePath: { eq: "Mike_1970s_cartoon_005.jpg" }) {
+    authorMobileImage: file(relativePath: { eq: "Mike_LinkedIn.png" }) {
       ...fixedImage
     },
     backgroundMobileImage: file(relativePath: { eq: "Binary_Blue_Bkgrd.jpeg" }) {
