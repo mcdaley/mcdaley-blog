@@ -30,10 +30,15 @@ export default ({ data, location,  pathContext}) => {
     <Layout>
       <SEO post={post} isBlogPost={true} />
       <div className="row">
-        <div className="col-12">
+        <div className="col-md-1 col-lg-2">
+        </div>
+        <div className="col-12 col-md-10 col-lg-8">
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <hr />
           <PrevNextPostLink prev={prev} next={next} />
+        </div>
+        <div className="col-md-1 col-lg-2">
         </div>
       </div>
     </Layout>
