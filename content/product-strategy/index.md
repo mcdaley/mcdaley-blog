@@ -1,7 +1,7 @@
 ---
 title:        "Can You Say What Your Product Strategy Is?"
 path:         "what-is-your-product-strategy"
-date:         "2018-09-23"
+date:         "2018-12-02"
 cover:        "brainstorm-blocks.jpg"
 excerpt:      "Can you summarize your product’s strategy in 35 words or less? If yes, can your colleagues put it the same way? Organizations fail to appreciate the necessity of having a simple, clear, succinct strategy statement that everyone can internalize and use as a guiding light for making difficult product choices."
 ---
