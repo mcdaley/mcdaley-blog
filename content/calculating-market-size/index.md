@@ -71,7 +71,7 @@ If you are launching a consumer online product then a quick way to calculate the
     </tr>
   </tbody>
   <tfoot>
-    <tr class="bg-primary">
+    <tr style="background-color:#CCCCCC;">
       <td class="text-center"> Total </td>
       <td class="text-right" colspan="3" style="font-weight:bold;">
         132M
@@ -127,9 +127,16 @@ The following table provides a quick summary of the estimated percent of the mar
 #### Calculate the Product Market Size
 Calculate the product market size by multiplying the total potential market and the percentages of the market that we estimated in the previous sections.
 
-= 132M people (0.80 urban) \* (0.33 market share) \* (0.05 will try scooter) 
-
-= **1.5M** is the number of people we expect to use our scooter rideshare
+<table class="table table-borderless table-math">
+  <tr class="tr-math">
+    <td>=</td>
+    <td>132M people * (0.80 urban) * (0.33 market share) * (0.05 will try scooter)</td>
+  </tr>
+  <tr class="tr-math-result">
+    <td>=</td>
+    <td>1.5M is the number of people we expect to use our scooter rideshare</td>
+  </tr>
+</table>
 
 ### Estimate Expected Product Usage
 The final step is to calculate the expected product usage so that we can calculate the number of rides per day and number of requests per minute by determining average user rental frequency and average number of server requests made per ride.
@@ -137,27 +144,58 @@ The final step is to calculate the expected product usage so that we can calcula
 #### Average User Rental Frequency
 On average, let’s assume that a user will rent a scooter once per month and now we can calculate the number of riders per day as shown below.
 
-= 1.5M * (1 ride / month) * (1 month / 30 days) 
-
-=  50,000 rides per day
+<table class="table table-borderless table-math">
+  <tr class="tr-math">
+    <td>=</td>
+    <td>1.5M * (1 ride/month) * (1 month/30 days)</td>
+  </tr>
+  <tr class="tr-math-result">
+    <td>=</td>
+    <td>50,000 rides per day</td>
+  </tr>
+</table>
 
 #### Average Server Requests per Ride
 The app will need to make multiple requests to the server during each ride and we can calculate the average number of requests made per ride, where a request is when the app makes a call to the server to rent/pickup scooter, provide gps coordinates, and dropping off scooter.
 
 We’ll assume the average scooter ride is less than 2 miles and lasts less than 10 minutes. Also, the app will send updated coordinates of the scooter once every 30 seconds so that the server knows where the scooter is located. We can then calculate the average number of transactions per ride as shown below:
 
-= (1 request at pickup) \* [(1 gps request / 30 seconds) \* (10 mins/ride) \* (60 sec/min)] \* (1 request at drop-off)
-
-= 22 requests / ride
+<table class="table table-borderless table-math">
+  <tr class="tr-math">
+    <td>=</td>
+    <td> (1 request at pickup) * </td>
+  </tr>
+  <tr class="tr-math">
+    <td>&nbsp;</td>
+    <td>[(1 gps request/30 seconds) * (600 sec/ride)] * </td>
+  </tr>
+  <tr class="tr-math">
+    <td>&nbsp;</td>
+    <td>(1 request at drop-off)</td>
+  </tr>
+  <tr class="tr-math-result">
+    <td>=</td>
+    <td>22 requests per ride</td>
+  </tr>
+</table>
 
 #### Average Transactions per Second
 We have now calculated that we’ll have 50,000 rides per day and that each ride makes 22 requests. We’ll also assume that people are only renting scooters during the day, so there will only be rentals from 8AM EST - 8PM PST or 15 hours per day. The following calculation will gives us the average number of requests per second our scooter rideshare product will need to support.
 
-= 50,000 rides per day * (1 day / 15 hours) * (22 requests/ride)
-
-= 1,200 requests per minute * (1 hour / 60 minutes)
-
-= 20 requests per second
+<table class="table table-borderless table-math">
+  <tr class="tr-math">
+    <td>=</td>
+    <td>50,000 rides per day * (1 day/15 hours) * (22 requests/ride)</td>
+  </tr>
+  <tr class="tr-math">
+    <td>=</td>
+    <td>1,200 requests per minute * (1 hour/60 minutes)</td>
+  </tr>
+  <tr class="tr-math-result">
+    <td>=</td>
+    <td>20 requests per second</td>
+  </tr>
+</table>
 
 Our market sizing exercise has calculated that our scooter rideshare company will have to handles 1,200 requests per minute or 20 requests per second. Our app needs to handle a significant amount of requests per minute, but we are nowhere close to the amount of requests handled by Twitter and Facebook.
 

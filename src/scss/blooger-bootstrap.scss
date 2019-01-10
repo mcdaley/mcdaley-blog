@@ -184,6 +184,19 @@ a.prev-post-link, a.next-post-link {
   }
 }
 
+.table-math tr.tr-math > td {
+    padding:              0.10rem;
+}
+
+.table-math tr.tr-math-result {
+  background-color:     #CCCCCC;
+
+  td {
+    margin-top:         0.10rem;
+    padding:            0.20rem; 
+  }
+}
+
 //---------------------------------------------------------
 // About page styles
 //---------------------------------------------------------
