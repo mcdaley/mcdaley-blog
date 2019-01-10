@@ -38,7 +38,7 @@ If you are launching a consumer online product then a quick way to calculate the
       </th>
     </tr>
     <tr>
-      <th class="text-center">Age</th>
+      <th class="text-center">&nbsp;&nbsp;Age&nbsp;&nbsp;</th>
       <th class="text-right">People</th>
       <th class="text-right">Percent</th>
       <th class="text-right">Total Market</th>
@@ -160,14 +160,14 @@ The app will need to make multiple requests to the server during each ride and w
 
 We’ll assume the average scooter ride is less than 2 miles and lasts less than 10 minutes. Also, the app will send updated coordinates of the scooter once every 30 seconds so that the server knows where the scooter is located. We can then calculate the average number of transactions per ride as shown below:
 
-<table class="table table-borderless table-math">
+<table class="table table-responsive table-borderless table-math">
   <tr class="tr-math">
     <td>=</td>
     <td> (1 request at pickup) * </td>
   </tr>
   <tr class="tr-math">
     <td>&nbsp;</td>
-    <td>[(1 gps request/30 seconds) * (600 sec/ride)] * </td>
+    <td>[(1 gps request/30 seconds)*(600 sec/ride)] * </td>
   </tr>
   <tr class="tr-math">
     <td>&nbsp;</td>
