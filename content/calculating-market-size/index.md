@@ -173,7 +173,7 @@ We all want our products to be super successful and with best intentions we tend
 Our calculations show that even though our scooter company has a valuation $1B - we do not have to handle “tens of thousands of requests” per minute right now or in the foreseeable future.
 Using some basic math upfront when launching a new product has helped us determine the expected market for our product. In the majority of the cases, you’ll find that your expected number of users and requests are significantly less than you originally thought. 
 
-When we overestimate the number of requests per minute that are application needs to handle, we tend to create over-complex architectures which dramatically increases our time to market by increasing the software development and testing time. (over-complex architecture provides zero benefit to the user)
+When we overestimate the number of requests per minute that are application needs to handle, we tend to create over-complex architectures which dramatically increases our time to market by increasing the software development and testing time without providing any benefit to the user.
 
 Having an estimate of your market size will guide you to  define a system architecture for your product launch that will handle all of your traffic within expected response times. In the followup blog post, we’ll look at at creating a “Minimum Viable Architecture” for our scooter rideshare company based on our calculated market size and requests per minute.
 
