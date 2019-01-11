@@ -15,7 +15,7 @@ excerpt:      "Can you summarize your product’s strategy in 35 words or less? 
   />
 </div>
 
-Our scooter rideshare company has just received VC funding and we now have to build and launch our product as quickly as possible and within budget. Human tendency is to overestimate the number of users and the number of requests per minute that a new app/website must support. 
+After securing VC funding for our scooter rideshare company, we now have to build and launch our product as quickly as possible and within budget. Human tendency is to overestimate the number of users and the number of requests per minute that a new app/website must support. 
 
 When the expected traffic is overestimated then we fall into the trap of making the backend architecture too complicated because we think we need to handle >100 times more requests then the application will actually receive. Increasing the complexity of the server architecture dramatically increases the amount of development and testing needed to launch a site without providing any benefit to users. 
 
@@ -210,7 +210,7 @@ The example calculation is meant to be a quick back of the envelope sizing exerc
 ## Conclusion
 We all want our products to be super successful and with best intentions we tend to overestimate the number of requests are app will need to process. Especially when the articles we read about performance are typically for sites like Twiiter and facebook that need to handle “tens of thousands of requests” per minute - so that becomes our baseline.
 
-Our calculations show that even though our scooter company has a valuation $1B - we do not have to handle “tens of thousands of requests” per minute right now or in the foreseeable future. Using some basic math upfront when launching a new product has helped us determine the expected market for our product. In the majority of the cases, you’ll find that your expected number of users and transactions are significantly less than you originally thought. 
+Our calculations show that even though our scooter company has a $1B valuation - we do not have to handle “tens of thousands of requests” per minute right now or in the foreseeable future. Using some basic math upfront when launching a new product has helped us determine the expected market for our product. In the majority of the cases, you’ll find that your expected number of users and transactions are significantly less than you originally thought. 
 
 When we overestimate the number of requests per minute that our application needs to handle, we tend to create over-complex architectures which dramatically increases our time to market by increasing the software development and testing time without providing any benefit to our users. We do not want to burn through our VC funding by building an over-complex application that does not help us meet our business objectives.
 
