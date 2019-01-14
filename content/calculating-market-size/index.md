@@ -15,18 +15,18 @@ excerpt:      "Can you summarize your product’s strategy in 35 words or less? 
   />
 </div>
 
-After securing VC funding for our scooter rideshare company, we now have to build and launch our product as quickly as possible and within budget. Human tendency is to overestimate the number of users and the number of requests per minute that a new app/website must support. 
+After securing VC funding for your scooter rideshare company, you now have to build and launch your product as quickly as possible and within budget. Human tendency is to overestimate the number of users and the number of requests per minute that a new app/website must support.
 
-When the expected traffic is overestimated then we fall into the trap of making the backend architecture too complicated because we think we need to handle >100 times more requests then the application will actually receive. Increasing the complexity of the server architecture dramatically increases the amount of development and testing needed to launch a site without providing any benefit to users. 
+When the expected traffic is overestimated then you typically fall into the trap of making the backend architecture too complicated because you think you need to handle >100 times more requests then the application will actually receive. Increasing the complexity of the server architecture dramatically increases the amount of development and testing needed to launch a site without providing any benefit to users. 
 
-Taking the time in the beginning of the project to understand the expected requests per minute and the usage of the application can save months in development time. In this post we’ll look at a simple back of the envelope method to calculate the market size for a new product and we will determine if our app/website really needs to support 10,000 requests per second.
+Taking the time in the beginning of the project to understand the expected requests per minute and the usage of the application can save months in development time. In this post we’ll look at a simple back of the envelope method to calculate the market size for a new product and we will determine if your app/website really needs to support 10,000 requests per second.
 
 ## Calculate Market Size for a New Product
-We’ll work through an example market sizing exercise for our new electric scooter rideshare company launched in the US that already has a $1B valuation, so that we can estimate the average number of requests per minute that our app will need to handle over the first 2 to 4 years after our product launch.
+We’ll work through an example market sizing exercise for your new electric scooter rideshare company launched in the US that already has a $1B valuation, so that we can estimate the average number of requests per minute that your app will need to handle over the first 2 to 4 years after your product launch.
 
 We’ll calculate the market size and the number of requests per minute by: 
 * Calculating the total potential market for the product
-* Estimating the percentage of the market our product will capture
+* Estimating the percentage of the market your product will capture
 * Estimating the average use of the product.
 
 ### Calculate the Total Potential US Market
@@ -85,7 +85,7 @@ If you are launching a consumer online product then a quick way to calculate the
 In this example, the electric scooter rental market has a potential market of 132M people in the US and this will be the starting point for the calculation.
 
 ### Estimate the Percent of Market We Expect the Product to Capture
-We’ll now estimate the percent of the scooter rideshare market that we expect to capture by looking at 3 factors: percent of people in US that live in urban areas, percent of market our competition will capture, and percent of people that will actually rent a scooter.
+We’ll now estimate the percent of the scooter rideshare market that we expect to capture by looking at 3 factors: percent of people in US that live in urban areas, percent of market your competition will capture, and percent of people that will actually rent a scooter.
 
 #### Percent of People in US that live in Urban Areas
 We’ll assume that the scooter rideshare will only be viable in urban areas since scooter rides are expected to be short rides less than 2 miles. In the US, 80% of the population lives in an urban area.
@@ -182,7 +182,7 @@ We’ll assume the average scooter ride is less than 2 miles and lasts less than
 </table>
 
 #### Average Transactions per Second
-We have now calculated that we’ll have 50,000 rides per day and that each ride makes 22 requests. We’ll also assume that people are only renting scooters during the day, so there will only be rentals from 8AM EST - 8PM PST or 15 hours per day. The following calculation will gives us the average number of requests per second our scooter rideshare product will need to support.
+We have now calculated that we’ll have 50,000 rides per day and that each ride makes 22 requests. We’ll also assume that people are only renting scooters during the day, so there will only be rentals from 8AM EST - 8PM PST or 15 hours per day. The following calculation will gives us the average number of requests per second your scooter rideshare product will need to support.
 
 <table class="table table-borderless table-math">
   <tr class="tr-math">
@@ -199,22 +199,22 @@ We have now calculated that we’ll have 50,000 rides per day and that each ride
   </tr>
 </table>
 
-Our market sizing exercise has calculated that our scooter rideshare company will have to handles 1,200 requests per minute or 20 requests per second. Our app needs to handle a significant amount of requests per minute, but we are nowhere close to the amount of requests handled by Twitter and Facebook.
+Our market sizing exercise has calculated that your scooter rideshare company will have to handles 1,200 requests per minute or 20 requests per second. Your app needs to handle a significant amount of requests per minute, but you are nowhere close to the amount of requests handled by Twitter and Facebook.
 
 ### Factors Not Considered
-The example calculation is meant to be a quick back of the envelope sizing exercise to demonstrate that our site does not have to handle tens of thousands of requests per minute. We did not look at all of the factors as noted below:
+The example calculation is meant to be a quick back of the envelope sizing exercise to demonstrate that your site does not have to handle tens of thousands of requests per minute. We did not look at all of the factors as noted below:
 * Expect bursts of traffic during the morning and evening commutes to/from work
 * Expect more rides during the nice weather in the Summer
 * Expected growth rate of the scooter rideshare market
 
 ## Conclusion
-We all want our products to be super successful and with best intentions we tend to overestimate the number of requests are app will need to process. Especially when the articles we read about performance are typically for sites like Twiiter and facebook that need to handle “tens of thousands of requests” per minute - so that becomes our baseline.
+We all want our products to be super successful and with best intentions we tend to overestimate the number of requests are app will need to process. Especially when the articles we read about performance are typically for sites like Twitter and facebook that need to handle “tens of thousands of requests” per minute - so that becomes our baseline.
 
-Our calculations show that even though our scooter company has a $1B valuation - we do not have to handle “tens of thousands of requests” per minute right now or in the foreseeable future. Using some basic math upfront when launching a new product has helped us determine the expected market for our product. In the majority of the cases, you’ll find that your expected number of users and transactions are significantly less than you originally thought. 
+Our calculations show that even though your scooter company has a $1B valuation - you do not have to handle “tens of thousands of requests” per minute right now or in the foreseeable future. Using some basic math upfront when launching a new product has helped us determine the expected market for your product. In the majority of the cases, you’ll find that your expected number of users and transactions are significantly less than you originally thought. 
 
-When we overestimate the number of requests per minute that our application needs to handle, we tend to create over-complex architectures which dramatically increases our time to market by increasing the software development and testing time without providing any benefit to our users. We do not want to burn through our VC funding by building an over-complex application that does not help us meet our business objectives.
+When you overestimate the number of requests per minute that your application needs to handle, you will tend to create over-complex architectures which dramatically increases your time to market by increasing the software development and testing time without providing any benefit to your users. You do not want to burn through your VC funding by building an over-complex application that does not help you meet your business objectives.
 
-Having an estimate of our market size will guide us to define a system architecture for our product launch that will handle all of our traffic within expected response times and we will be able to launch our product faster and for less money - making our VCs happy. In the followup blog post, we’ll look at at creating a “Minimum Viable Architecture” for our scooter rideshare company based on our calculated market size and requests per minute.
+Having an estimate of your market size will guide you to define a system architecture for your product launch that will handle all of your traffic within expected response times and you will be able to launch your product faster and for less money - making your VCs happy. In the followup blog post, we’ll look at at creating a “Minimum Viable Architecture” for your scooter rideshare company based on the calculated market size and requests per minute.
 
 
 
