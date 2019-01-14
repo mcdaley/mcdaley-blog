@@ -215,12 +215,3 @@ Our calculations show that even though your scooter company has a $1B valuation 
 When you overestimate the number of requests per minute that your application needs to handle, you will tend to create over-complex architectures which dramatically increases your time to market by increasing the software development and testing time without providing any benefit to your users. You do not want to burn through your VC funding by building an over-complex application that does not help you meet your business objectives.
 
 Having an estimate of your market size will guide you to define a system architecture for your product launch that will handle all of your traffic within expected response times and you will be able to launch your product faster and for less money - making your VCs happy. In the followup blog post, we’ll look at at creating a “Minimum Viable Architecture” for your scooter rideshare company based on the calculated market size and requests per minute.
-
-
-
-
-
-
-
-
-
